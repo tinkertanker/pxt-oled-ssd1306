@@ -1,0 +1,21 @@
+{
+    "name": "SSD1306_OLED",
+    "version": "0.0.1",
+    "description": "Tinkercademy package for HT16K33 Alphanumeric Display",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "shims.d.ts",
+        "SSD1306_OLED.cpp",
+        "Adafruit_SSD1306.h",
+        "Adafruit_SSD1306.cpp",
+        "Adafruit_GFX.h",
+        "Adafruit_GFX.cpp",
+        "Adafruit_GFX_Config.h",
+        "glcdfont.h"
+    ],
+    "public": true
+}
