@@ -6,22 +6,22 @@ This is the PXT Package for SSD1306 OLED from Adafruit
 1. Insert the OLED display into the I2C ports on the break out board.
 
 ## PXT Blocks
-1. Initialize OLED Display
+### Initialize OLED Display
 Initialize OLED display with height and width of the OLED display (Eg: 64 by 128).
 Shows Adafruit splash screen after initializing.
 
-2. Initialize OLED Display for 'Text Output'
+### Initialize OLED Display for 'Text Output'
 Initialize OLED display.
 Clears the screen and sets the cursor to (0, 0) to print text inputs.
 Able to use 'show string' and 'show number' below.
 In text output mode, wrapping is enabled.
 If text exceeds number of lines supported, the lines will 'shift up', like in terminal.
 
-3. Show String
+### Show String
 Prints string to OLED, at cursor location.
 Requires OLED to be initialized for text display.
 
-4. Show Number
+### Show Number
 Prints number to OLED, at cursor location.
 Requires OLED to be initialized for text display.
 
