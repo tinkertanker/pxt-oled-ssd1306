@@ -381,7 +381,13 @@ size_t Adafruit_GFX::writeChar(uint8_t c)
             cursor_y += textsize*8;
             cursor_x = 0;
         }
+        
+        
     }
+	if (cursor_y > (_height - textsize*8)) {
+		shiftDisplay(0, -8*textsize);
+		cursor_y -= textsize*8;
+	}
     return 1;
 }
 

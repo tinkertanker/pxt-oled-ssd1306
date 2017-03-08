@@ -66,6 +66,7 @@ class Adafruit_GFX : public Stream
     /// Paint one BLACK or WHITE pixel in the display buffer
     // this must be defined by the subclass
     virtual void drawPixel(int16_t x, int16_t y, uint16_t color) = 0;
+    virtual void shiftDisplay(int16_t dx, int16_t dy) = 0;
     // this is optional
     virtual void invertDisplay(bool i) {};
     

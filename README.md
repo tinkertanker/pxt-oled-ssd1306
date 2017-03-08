@@ -7,7 +7,23 @@ This is the PXT Package for SSD1306 OLED from Adafruit
 
 ## PXT Blocks
 1. Initialize OLED Display
-Initialize OLED display with height and width of the OLED display. (Eg: 64 by 128)
+Initialize OLED display with height and width of the OLED display (Eg: 64 by 128).
+Shows Adafruit splash screen after initializing.
+
+2. Initialize OLED Display for 'Text Output'
+Initialize OLED display.
+Clears the screen and sets the cursor to (0, 0) to print text inputs.
+Able to use 'show string' and 'show number' below.
+In text output mode, wrapping is enabled.
+If text exceeds number of lines supported, the lines will 'shift up', like in terminal.
+
+3. Show String
+Prints string to OLED, at cursor location.
+Requires OLED to be initialized for text display.
+
+4. Show Number
+Prints number to OLED, at cursor location.
+Requires OLED to be initialized for text display.
 
 
 ## Possible Extensions
@@ -15,7 +31,6 @@ Initialize OLED display with height and width of the OLED display. (Eg: 64 by 12
 2. Analog Clock
 3. Analog Meter
 4. Variable tracking?
-5. Print string
 6. Print images
 
 ## Footnotes

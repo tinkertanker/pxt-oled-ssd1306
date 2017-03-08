@@ -67,6 +67,7 @@ public:
 
 	/// Clear the display buffer    
 	void clearDisplay(void);
+	void shiftDisplay(int16_t dx, int16_t dy);
 	virtual void invertDisplay(bool i);
 
 	/// Cause the display to be updated with the buffer content.
@@ -76,6 +77,7 @@ public:
     
 protected:
 	virtual void sendDisplayBuffer() = 0;
+	void transposePosition(int16_t &x, int16_t &y);
 	DigitalOut2 rst;
 
 	// the memory buffer for the LCD
