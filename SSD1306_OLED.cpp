@@ -7,19 +7,22 @@ using namespace pxt;
 
 namespace SSD1306_OLED {
 	#define SSD1306_ADDRESS 0x78
-	#undef printf(...)
+	#undef printf
 	
 	
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 	Adafruit_SSD1306_I2c *oled;
 	/**
-	* initialises I2C OLED with Splash Display
+	* initialises I2C OLED with Splash Tinkercademy Display
 	*/
 	//% blockId=oled_init
 	//% block="Initialize OLED height %height|width %width"
 	//% icon="\uf1ec"
 	void init(int height, int width){
+		if (oled != NULL) delete oled;
 		oled = new Adafruit_SSD1306_I2c(i2c, p10, SSD1306_ADDRESS, height, width);
+		oled->splash();
+		oled->display();
 	}
 	
 	/**
@@ -29,6 +32,7 @@ namespace SSD1306_OLED {
 	//% block="Initialize OLED text output height %height|width %width"
 	//% icon="\uf1ec"
 	void init_terminal(int height, int width){
+		if (oled != NULL) delete oled;
 		oled = new Adafruit_SSD1306_I2c(i2c, p10, SSD1306_ADDRESS, height, width);
 		oled->clearDisplay();
 		oled->display();

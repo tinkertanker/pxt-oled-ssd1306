@@ -124,9 +124,9 @@ void Adafruit_SSD1306::drawPixel(int16_t x, int16_t y, uint16_t color)
     
     // x is which column
     if (color == WHITE) 
-        buffer[x+ (y/8)*_rawWidth] |= _BV((y%8));  
+        buffer[x+ (y>>3)*_rawWidth] |= _BV((y&7));  
     else // else black
-        buffer[x+ (y/8)*_rawWidth] &= ~_BV((y%8)); 
+        buffer[x+ (y>>3)*_rawWidth] &= ~_BV((y&7)); 
 }
 void Adafruit_SSD1306::transposePosition (int16_t &x, int16_t &y) {
 	switch (getRotation())
@@ -174,13 +174,13 @@ void Adafruit_SSD1306::shiftDisplay(int16_t dx, int16_t dy) {
 					int16_t cx = x, cy = y, nx = x - dx, ny = y - dy;
 					transposePosition(cx, cy);
 					transposePosition(nx, ny);
-					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy/8) * _rawWidth] &= 0xFF ^ (1<<(cy%8));
+					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy>>3) * _rawWidth] &= 0xFF ^ (1<<(cy&7));
 					else {
 						/* swap bits cy % 8 and ny % 8 */
-						if ( !!(buffer[cx + (cy/8)*_rawWidth] & (1<<(cy%8))) !=
-							 !!(buffer[nx + (ny/8)*_rawWidth] & (1<<(ny%8))) ){
-							buffer[cx + (cy/8)* _rawWidth] ^= (1<<(cy%8));
-							buffer[nx + (ny/8)* _rawWidth] ^= (1<<(ny%8));
+						if ( !!(buffer[cx + (cy>>3)*_rawWidth] & (1<<(cy&7))) !=
+							 !!(buffer[nx + (ny>>3)*_rawWidth] & (1<<(ny&7))) ){
+							buffer[cx + (cy>>3)* _rawWidth] ^= (1<<(cy&7));
+							buffer[nx + (ny>>3)* _rawWidth] ^= (1<<(ny&7));
 						}
 					}
 				}
@@ -189,13 +189,13 @@ void Adafruit_SSD1306::shiftDisplay(int16_t dx, int16_t dy) {
 					int16_t cx = x, cy = y, nx = x - dx, ny = y - dy;
 					transposePosition(cx, cy);
 					transposePosition(nx, ny);
-					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy/8) * _rawWidth] &= 0xFF ^ (1<<(cy%8));
+					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy>>3) * _rawWidth] &= 0xFF ^ (1<<(cy&7));
 					else {
 						/* swap bits cy % 8 and ny % 8 */
-						if ( !!(buffer[cx + (cy/8)*_rawWidth] & (1<<(cy%8))) !=
-							 !!(buffer[nx + (ny/8)*_rawWidth] & (1<<(ny%8))) ){
-							buffer[cx + (cy/8)*_rawWidth] ^= (1<<(cy%8));
-							buffer[nx + (ny/8)* _rawWidth] ^= (1<<(ny%8));
+						if ( !!(buffer[cx + (cy>>3)*_rawWidth] & (1<<(cy&7))) !=
+							 !!(buffer[nx + (ny>>3)*_rawWidth] & (1<<(ny&7))) ){
+							buffer[cx + (cy>>3)*_rawWidth] ^= (1<<(cy&7));
+							buffer[nx + (ny>>3)* _rawWidth] ^= (1<<(ny&7));
 						}					
 					}
 				}
@@ -209,13 +209,13 @@ void Adafruit_SSD1306::shiftDisplay(int16_t dx, int16_t dy) {
 					int16_t cx = x, cy = y, nx = x - dx, ny = y - dy;
 					transposePosition(cx, cy);
 					transposePosition(nx, ny);
-					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy/8) * _rawWidth] &= 0xFF ^ (1<<(cy%8));
+					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy>>3) * _rawWidth] &= 0xFF ^ (1<<(cy&7));
 					else {
 						/* swap bits cy % 8 and ny % 8 */
-						if ( !!(buffer[cx + (cy/8)*_rawWidth] & (1<<(cy%8))) !=
-							 !!(buffer[nx + (ny/8)*_rawWidth] & (1<<(ny%8))) ) {
-							buffer[cx + (cy/8)*_rawWidth] ^= (1<<(cy%8));
-							buffer[nx + (ny/8)* _rawWidth] ^= (1<<(ny%8));
+						if ( !!(buffer[cx + (cy>>3)*_rawWidth] & (1<<(cy&7))) !=
+							 !!(buffer[nx + (ny>>3)*_rawWidth] & (1<<(ny&7))) ) {
+							buffer[cx + (cy>>3)*_rawWidth] ^= (1<<(cy&7));
+							buffer[nx + (ny>>3)* _rawWidth] ^= (1<<(ny&7));
 						}					}
 				}
 			} else {
@@ -223,13 +223,13 @@ void Adafruit_SSD1306::shiftDisplay(int16_t dx, int16_t dy) {
 					int16_t cx = x, cy = y, nx = x - dx, ny = y - dy;
 					transposePosition(cx, cy);
 					transposePosition(nx, ny);
-					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy/8) * _rawWidth] &= 0xFF ^ (1<<(cy%8));
+					if (nx < 0 || ny < 0 || nx >= _width || ny >= _height) buffer[cx + (cy>>3) * _rawWidth] &= 0xFF ^ (1<<(cy&7));
 					else {
 						/* swap bits cy % 8 and ny % 8 */
-						if ( !!(buffer[cx + (cy/8)*_rawWidth] & (1<<(cy%8))) !=
-							 !(!buffer[nx + (ny/8)*_rawWidth] & (1<<(ny%8))) ){
-							buffer[cx + (cy/8)*_rawWidth] ^= (1<<(cy%8));
-							buffer[nx + (ny/8)* _rawWidth] ^= (1<<(ny%8));
+						if ( !!(buffer[cx + (cy>>3)*_rawWidth] & (1<<(cy&7))) !=
+							 !(!buffer[nx + (ny>>3)*_rawWidth] & (1<<(ny&7))) ){
+							buffer[cx + (cy>>3)*_rawWidth] ^= (1<<(cy&7));
+							buffer[nx + (ny>>3)* _rawWidth] ^= (1<<(ny&7));
 						}					}
 				}
 			}
@@ -285,8 +285,4 @@ void Adafruit_SSD1306::splash(void)
 	setTextCursor(0, 0);
 	textcolor = WHITE;
 	textbgcolor = BLACK;
-	
-	
-	
-
 }

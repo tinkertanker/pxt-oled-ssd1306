@@ -2,7 +2,7 @@
 declare namespace SSD1306_OLED {
 
     /**
-     * initialises I2C OLED with Splash Display
+     * initialises I2C OLED with Splash Tinkercademy Display
      */
     //% blockId=oled_init
     //% block="Initialize OLED height %height|width %width"

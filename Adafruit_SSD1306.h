@@ -84,77 +84,6 @@ protected:
 	std::vector<uint8_t> buffer;
 };
 
-
-/** This is the SPI SSD1306 display driver transport class
- *
- */
-class Adafruit_SSD1306_Spi : public Adafruit_SSD1306
-{
-public:
-	/** Create a SSD1306 SPI transport display driver instance with the specified DC, RST, and CS pins, as well as the display dimentions
-	 *
-	 * Required parameters
-	 * @param spi - a reference to an initialized SPI object
-	 * @param DC (Data/Command) pin name
-	 * @param RST (Reset) pin name
-	 * @param CS (Chip Select) pin name
-	 *
-	 * Optional parameters
-	 * @param rawHeight - the vertical number of pixels for the display, defaults to 32
-	 * @param rawWidth - the horizonal number of pixels for the display, defaults to 128
-	 */
-	Adafruit_SSD1306_Spi(SPI &spi, PinName DC, PinName RST, PinName CS, uint8_t rawHieght = 32, uint8_t rawWidth = 128)
-	    : Adafruit_SSD1306(RST, rawHieght, rawWidth)
-	    , cs(CS,true)
-	    , dc(DC,false)
-	    , mspi(spi)
-	    {
-		    begin();
-		    splash();
-		    display();
-	    };
-
-	virtual void command(uint8_t c)
-	{
-	    cs = 1;
-	    dc = 0;
-	    cs = 0;
-	    mspi.write(c);
-	    cs = 1;
-	};
-
-	virtual void data(uint8_t c)
-	{
-	    cs = 1;
-	    dc = 1;
-	    cs = 0;
-	    mspi.write(c);
-	    cs = 1;
-	};
-
-protected:
-	virtual void sendDisplayBuffer()
-	{
-		cs = 1;
-		dc = 1;
-		cs = 0;
-
-		for(uint16_t i=0, q=buffer.size(); i<q; i++)
-			mspi.write(buffer[i]);
-
-		if(height() == 32)
-		{
-			for(uint16_t i=0, q=buffer.size(); i<q; i++)
-				mspi.write(0);
-		}
-
-		cs = 1;
-	};
-
-	DigitalOut2 cs, dc;
-	SPI &mspi;
-};
-
 /** This is the I2C SSD1306 display driver transport class
  *
  */
@@ -179,7 +108,7 @@ public:
 	    , mi2cAddress(i2cAddress)
 	    {
 		    begin();
-		    splash();
+		    //splash();
 		    display();
 	    };
 
