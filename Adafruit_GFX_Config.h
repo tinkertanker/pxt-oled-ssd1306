@@ -2,7 +2,7 @@
 #define _ADAFRUIT_GFX_CONFIG_H_
 
 // Uncomment this to turn off the builtin splash
-//#define NO_SPLASH_ADAFRUIT
+#define NO_SPLASH_ADAFRUIT
 
 // Uncomment this to enable all functionality
 //#define GFX_WANT_ABSTRACTS

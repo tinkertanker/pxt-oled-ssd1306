@@ -8,7 +8,7 @@ This is the PXT Package for SSD1306 OLED from Adafruit
 ## PXT Blocks
 ### Initialize OLED Display
 Initialize OLED display with height and width of the OLED display (Eg: 64 by 128).
-Shows Adafruit splash screen after initializing.
+Shows TinkerTanker splash screen after initializing.
 
 ### Initialize OLED Display for 'Text Output'
 Initialize OLED display.

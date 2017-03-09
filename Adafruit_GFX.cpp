@@ -197,7 +197,9 @@ void Adafruit_GFX::drawLine(int16_t x0, int16_t y0,  int16_t x1, int16_t y1, uin
 void Adafruit_GFX::drawFastVLine(int16_t x, int16_t y, int16_t h, uint16_t color)
 {
     // stupidest version - update in subclasses if desired!
-    drawLine(x, y, x, y+h-1, color);
+    //drawLine(x, y, x, y+h-1, color);
+	for (int16_t i=y; i<y+h; ++i)
+		drawPixel(x, i, color);
 }
 
 void Adafruit_GFX::fillRect(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t color)
