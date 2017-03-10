@@ -37,6 +37,16 @@ declare namespace SSD1306_OLED {
     //% block="show|number %number" blockGap=8
     //% async shim=SSD1306_OLED::showNumber
     function showNumber(number: number): void;
+
+    /**
+     * Write image to buffer, 16 bytes at a time
+     */
+    //% weight=87 blockGap=8
+    //% block="show|image chunk %text" 
+    //% async
+    //% blockId=oled_print_image
+    //% icon="\uf1ec" shim=SSD1306_OLED::showImage
+    function showImage(text: string): void;
 }
 
 // Auto-generated. Do not edit. Really.

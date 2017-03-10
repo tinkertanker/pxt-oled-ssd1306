@@ -67,6 +67,27 @@ namespace SSD1306_OLED {
 		oled->display();
 	}
     
+    //uint16_t i_cnt = 0;
+    /**
+     * Write image to buffer, 16 bytes at a time
+     */
+    //% weight=87 blockGap=8
+    //% block="show|image chunk %text" 
+    //% async
+    //% blockId=oled_print_image
+	//% icon="\uf1ec"
+    void showImage(StringData *text) {
+		ManagedString s(text);
+		uint8_t l = s.length();
+		for (uint8_t i = 0; i < l; ++i) 
+			oled->data(s.charAt(i));
+		/*i_cnt += 16 * 8;
+		if (i_cnt >= oled->width() * oled->height()) 
+			oled->display(), i_cnt = 0;
+		*/
+    }
+    
+    
 	#define printf(...) uBit.serial.printf(__VA_ARGS__)
 
 }
