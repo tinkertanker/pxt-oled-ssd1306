@@ -64,7 +64,7 @@ public:
 	virtual void command(uint8_t c) = 0;
 	virtual void data(uint8_t c) = 0;
 	virtual void drawPixel(int16_t x, int16_t y, uint16_t color);
-	
+
 	/// Clear the display buffer    
 	void clearDisplay(void);
 	void shiftDisplay(int16_t dx, int16_t dy);
