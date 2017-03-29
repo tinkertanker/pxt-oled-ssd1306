@@ -1,3 +1,5 @@
+for PXT/microbit
+
 # SSD1306 OLED PXT Package
 
 This is the PXT Package for SSD1306 OLED from Adafruit
