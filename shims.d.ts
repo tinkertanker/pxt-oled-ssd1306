@@ -1,5 +1,6 @@
 // Auto-generated. Do not edit.
-declare namespace SSD1306_OLED {
+//% icon="\uf26c"
+declare namespace OLED {
 
     /**
      * initialises I2C OLED with Splash Tinkercademy Display
