@@ -1,5 +1,8 @@
 // Auto-generated. Do not edit.
-//% icon="\uf26c"
+
+
+
+    //% icon="\uf26c"
 declare namespace OLED {
 
     /**
@@ -7,7 +10,7 @@ declare namespace OLED {
      */
     //% blockId=oled_init
     //% block="Initialize OLED height %height|width %width"
-    //% icon="\uf1ec" shim=SSD1306_OLED::init
+    //% icon="\uf1ec" shim=OLED::init
     function init(height: number, width: number): void;
 
     /**
@@ -15,7 +18,7 @@ declare namespace OLED {
      */
     //% blockId=oled_init_terminal
     //% block="Initialize OLED text output height %height|width %width"
-    //% icon="\uf1ec" shim=SSD1306_OLED::init_terminal
+    //% icon="\uf1ec" shim=OLED::init_terminal
     function init_terminal(height: number, width: number): void;
 
     /**
@@ -26,7 +29,7 @@ declare namespace OLED {
     //% block="show|string %text" 
     //% async
     //% blockId=oled_print_string
-    //% icon="\uf1ec" shim=SSD1306_OLED::showString
+    //% icon="\uf1ec" shim=OLED::showString
     function showString(text: string): void;
 
     /**
@@ -36,7 +39,7 @@ declare namespace OLED {
     //% weight=96
     //% blockId=oled_print_number
     //% block="show|number %number" blockGap=8
-    //% async shim=SSD1306_OLED::showNumber
+    //% async shim=OLED::showNumber
     function showNumber(number: number): void;
 
     /**
@@ -46,7 +49,7 @@ declare namespace OLED {
     //% block="show|image chunk %text" 
     //% async
     //% blockId=oled_print_image
-    //% icon="\uf1ec" shim=SSD1306_OLED::showImage
+    //% icon="\uf1ec" shim=OLED::showImage
     function showImage(text: string): void;
 }
 

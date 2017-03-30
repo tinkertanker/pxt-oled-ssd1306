@@ -1,7 +1,7 @@
 {
     "name": "SSD1306_OLED",
     "version": "0.0.1",
-    "description": "Tinkercademy package for HT16K33 Alphanumeric Display",
+    "description": "Tinkercademy package for SSD1306 OLED controller",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -15,7 +15,8 @@
         "Adafruit_GFX.h",
         "Adafruit_GFX.cpp",
         "Adafruit_GFX_Config.h",
-        "glcdfont.h"
+        "glcdfont.h",
+        "enums.d.ts"
     ],
     "public": true
 }
