@@ -1,4 +1,5 @@
 //% icon="\uf26c"
+//% color="255" weight="90"
 namespace OLED {
 
     /**
@@ -22,7 +23,7 @@ namespace OLED {
     }
 
     /**
-     * Prints a text on the OLED display, will wrap and scroll upwards
+     * prints a string on the OLED display, will wrap and scroll upwards
      */
     //% help=basic/show-string 
     //% weight=87 blockGap=8
@@ -36,7 +37,7 @@ namespace OLED {
     }
 
     /**
-     * Print a number on the OLED display
+     * prints a number on the OLED display
      */
     //% help=basic/show-number
     //% weight=96
