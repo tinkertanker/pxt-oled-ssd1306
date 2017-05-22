@@ -18,5 +18,8 @@
         "glcdfont.h",
         "enums.d.ts"
     ],
+    "tests": [
+        "tests.ts"
+    ],
     "public": true
 }
