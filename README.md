@@ -27,13 +27,13 @@ Requires OLED to be initialized for text display.
 The following code is a simple counter that displays an increasing number every second.
 
 ```typescript
-OLED.initTerminal(64, 128);
-let count = 0;
-while (true) {
-    count += 1
-    OLED.showNumber(count)
+OLED.init(64, 128);
+let item = 0
+basic.forever(() => {
     basic.pause(1000)
-}
+    item += 1
+    OLED.showNumber(item)
+})
 ```
 
 ## Footnotes

@@ -16,6 +16,7 @@ namespace OLED {
 		oled->display();
 	}
 	
+	//%
 	void init_terminal(int height, int width){
 		if (oled != NULL) delete oled;
 		oled = new Adafruit_SSD1306_I2c(i2c, p10, SSD1306_ADDRESS, height, width);
@@ -24,11 +25,13 @@ namespace OLED {
 		oled->setTextCursor(0, 0);
 	}
 	
+	//%
     void showString(StringData *text) {
 		oled->printf("%s\n", text->data);
 		oled->display();
     }
     
+    //%
     void showNumber (int number) {
 		oled->printf("%d\n", number);
 		oled->display();
