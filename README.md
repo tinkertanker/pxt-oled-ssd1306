@@ -27,13 +27,18 @@ Requires OLED to be initialized for text display.
 Prints number to OLED, at cursor location.
 Requires OLED to be initialized for text display.
 
+## Example: Counter
+The following code is a simple counter that displays an increasing number every second.
 
-## Possible Extensions
-1. Plot Graph
-2. Analog Clock
-3. Analog Meter
-4. Variable tracking?
-6. Print images
+```
+OLED.initTerminal(64, 128);
+let count = 0;
+while (true) {
+    count += 1
+    OLED.showNumber(count)
+    basic.pause(1000)
+}
+```
 
 ## Footnotes
 1.  Datasheet
