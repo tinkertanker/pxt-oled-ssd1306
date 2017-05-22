@@ -9,22 +9,18 @@ This is the PXT Package for SSD1306 OLED controller, based on the Adafruit Ardui
 
 ## PXT Blocks
 ### Initialize OLED Display
-Initialize OLED display with height and width of the OLED display (Eg: 64 by 128).
-Shows TinkerTanker splash screen after initializing.
-
-### Initialize OLED Display for 'Text Output'
-Initialize OLED display.
-Clears the screen and sets the cursor to (0, 0) to print text inputs.
+Initializes the OLED display.
+Clears the screen and sets the cursor to (0, 0) to print text.
 Able to use 'show string' and 'show number' below.
 In text output mode, wrapping is enabled.
-If text exceeds number of lines supported, the lines will 'shift up', like in terminal.
+If text exceeds number of lines supported, the lines will 'shift up', like in a terminal.
 
 ### Show String
-Prints string to OLED, at cursor location.
+Prints a string to OLED, at cursor location.
 Requires OLED to be initialized for text display.
 
 ### Show Number
-Prints number to OLED, at cursor location.
+Prints a number to OLED, at cursor location.
 Requires OLED to be initialized for text display.
 
 ## Example: Counter
