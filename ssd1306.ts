@@ -1,25 +1,25 @@
-// Auto-generated. Do not edit.
-
-
-
-    //% icon="\uf26c"
-declare namespace OLED {
+//% icon="\uf26c"
+namespace OLED {
 
     /**
      * initialises I2C OLED with Splash Tinkercademy Display
      */
-    //% blockId=oled_init
-    //% block="Initialize OLED height %height|width %width"
+    //% blockId=oled_ini
+    //% block="initialize OLED height %height|width %width"
     //% icon="\uf1ec" shim=OLED::init
-    function init(height: number, width: number): void;
+    export function init(height: number, width: number): void {
+        return;
+    }
 
     /**
      * initialises I2C OLED for 'Terminal Mode'
      */
     //% blockId=oled_init_terminal
-    //% block="Initialize OLED text output height %height|width %width"
+    //% block="initialize OLED text output height %height|width %width"
     //% icon="\uf1ec" shim=OLED::init_terminal
-    function init_terminal(height: number, width: number): void;
+    export function initTerminal(height: number, width: number): void {
+        return;
+    }
 
     /**
      * Prints a text on the OLED display, will wrap and scroll upwards
@@ -30,7 +30,10 @@ declare namespace OLED {
     //% async
     //% blockId=oled_print_string
     //% icon="\uf1ec" shim=OLED::showString
-    function showString(text: string): void;
+    export function showString(text: string): void {
+        console.log("display: " + text);
+        return;
+    }
 
     /**
      * Print a number on the OLED display
@@ -40,7 +43,8 @@ declare namespace OLED {
     //% blockId=oled_print_number
     //% block="show|number %number" blockGap=8
     //% async shim=OLED::showNumber
-    function showNumber(number: number): void;
+    export function showNumber(number: number): void {
+        console.log("display: " + number);
+        return;
+    }
 }
-
-// Auto-generated. Do not edit. Really.

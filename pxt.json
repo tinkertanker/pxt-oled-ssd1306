@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "shims.d.ts",
+        "ssd1306.ts",
         "SSD1306_OLED.cpp",
         "Adafruit_SSD1306.h",
         "Adafruit_SSD1306.cpp",
