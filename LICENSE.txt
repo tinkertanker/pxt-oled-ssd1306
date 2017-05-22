@@ -1,4 +1,4 @@
-Copyright (c) Microsoft Corporation
+Copyright (c) Tinkertanker Pte Ltd
 
 All rights reserved.
 
