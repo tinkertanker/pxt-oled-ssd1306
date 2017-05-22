@@ -34,7 +34,7 @@ Requires OLED to be initialized for text display.
 The following code is a simple counter that displays an increasing number every second.
 
 ```typescript
-OLED.init(64, 128);
+OLED.init(64, 128)
 let item = 0
 basic.forever(() => {
     basic.pause(1000)
