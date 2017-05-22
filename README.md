@@ -30,7 +30,7 @@ Requires OLED to be initialized for text display.
 ## Example: Counter
 The following code is a simple counter that displays an increasing number every second.
 
-```
+```typescript
 OLED.initTerminal(64, 128);
 let count = 0;
 while (true) {
