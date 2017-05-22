@@ -2,7 +2,7 @@ for PXT/microbit
 
 # SSD1306 OLED PXT Package
 
-This is the PXT Package for SSD1306 OLED from Adafruit
+This is the PXT Package for SSD1306 OLED controller
 
 ## Hardware Setup
 1. Insert the OLED display into the I2C ports on the break out board.
