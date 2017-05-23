@@ -9,6 +9,8 @@ python:
 
 addons:
   apt:
+    sources:
+      - george-edison55-precise-backports
     packages:
       - ninja-build
       - cmake
