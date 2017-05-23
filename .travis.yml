@@ -1,10 +1,14 @@
-language: node_js
+language: python
 sudo: false
 
 node_js:
   - "7"
 
+python:
+  - "2.7"
+
 install:
+  - pip install yotta
   - npm install
   - npm run pxt:init
   - npm run pxt:install
