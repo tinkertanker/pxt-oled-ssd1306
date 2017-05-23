@@ -17,6 +17,7 @@ addons:
       - cmake
       - cmake-data
       - gcc-arm-embedded
+      - srecord
 
 install:
   - nvm install 7
