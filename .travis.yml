@@ -11,7 +11,7 @@ addons:
   apt:
     sources:
       - george-edison55-precise-backports
-      - sourceline: 'ppa:ppa:team-gcc-arm-embedded/ppa'
+      - sourceline: 'ppa:team-gcc-arm-embedded/ppa'
     packages:
       - ninja-build
       - cmake
