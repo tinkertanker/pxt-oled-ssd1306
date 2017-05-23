@@ -15,7 +15,7 @@ install:
   - npm run pxt:install
 
 script:
-  - npm run pxt:test
+  - npm run test
 
 cache:
   directories:
