@@ -8,6 +8,7 @@ python:
   - "2.7"
 
 install:
+  - nvm install 7
   - pip install yotta
   - npm install
   - npm run pxt:init
