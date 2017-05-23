@@ -1,0 +1,14 @@
+{
+  "name": "pxt-ssd1306-microbit",
+  "version": "1.0.0",
+    "dependencies": {},
+  "devDependencies": {
+    "pxt": "^0.3.0",
+    "pxt-microbit": "^0.9.76"
+  },
+  "scripts": {
+    "pxt:init": "pxt target microbit",
+    "pxt:install": "pxt install",
+    "test": "pxt test"
+  }
+}
