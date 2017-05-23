@@ -14,6 +14,9 @@ install:
   - npm run pxt:init
   - npm run pxt:install
 
+script:
+  - npm run pxt:test
+
 cache:
   directories:
     - node_modules
