@@ -16,7 +16,7 @@ addons:
       - ninja-build
       - cmake
       - cmake-data
-      - gcc-arm-none-eabi
+      - gcc-arm-embedded
 
 install:
   - nvm install 7
