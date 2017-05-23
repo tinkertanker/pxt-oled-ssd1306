@@ -11,10 +11,12 @@ addons:
   apt:
     sources:
       - george-edison55-precise-backports
+      - team-gcc-arm-embedded-ppa
     packages:
       - ninja-build
       - cmake
       - cmake-data
+      - arm-none-eabi-gcc
 
 install:
   - nvm install 7
