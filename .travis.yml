@@ -7,18 +7,19 @@ node_js:
 python:
   - "2.7"
 
+addons:
+  apt:
+    packages:
+      - ninja-build
+      - cmake
+      - cmake-data
+
 install:
   - nvm install 7
   - pip install yotta
-  - mkdir .tmp
-  - curl -L https://github.com/ninja-build/ninja/releases/download/v1.7.2/ninja-linux.zip -o .tmp/ninja-linux.zip
-  - unzip .tmp/ninja-linux.zip -d .tmp
   - npm install
   - npm run pxt:init
   - npm run pxt:install
-
-before_script:
-  - export PATH=$PATH:$PWD/.tmp
 
 script:
   - npm run test
