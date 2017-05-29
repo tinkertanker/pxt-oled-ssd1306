@@ -51,9 +51,8 @@ public:
 class Adafruit_SSD1306 : public Adafruit_GFX
 {
 public:
-	Adafruit_SSD1306(PinName RST, uint8_t rawHeight = 32, uint8_t rawWidth = 128)
+	Adafruit_SSD1306(uint8_t rawHeight = 32, uint8_t rawWidth = 128)
 		: Adafruit_GFX(rawWidth,rawHeight)
-		, rst(RST,false)
 	{
 		buffer.resize(rawHeight * rawWidth / 8);
 	};
@@ -78,7 +77,6 @@ public:
 protected:
 	virtual void sendDisplayBuffer() = 0;
 	void transposePosition(int16_t &x, int16_t &y);
-	DigitalOut2 rst;
 
 	// the memory buffer for the LCD
 	std::vector<uint8_t> buffer;
@@ -91,19 +89,18 @@ class Adafruit_SSD1306_I2c : public Adafruit_SSD1306
 {
 public:
 	#define SSD_I2C_ADDRESS     0x78
-	/** Create a SSD1306 I2C transport display driver instance with the specified RST pin name, the I2C address, as well as the display dimensions
+	/** Create a SSD1306 I2C transport display driver instance with the specified I2C address, as well as the display dimensions
 	 *
 	 * Required parameters
 	 * @param i2c - A reference to an initialized I2C object
-	 * @param RST - The Reset pin name
 	 *
 	 * Optional parameters
 	 * @param i2cAddress - The i2c address of the display
 	 * @param rawHeight - The vertical number of pixels for the display, defaults to 32
 	 * @param rawWidth - The horizonal number of pixels for the display, defaults to 128
 	 */
-	Adafruit_SSD1306_I2c(MicroBitI2C i2c, PinName RST, uint8_t i2cAddress = SSD_I2C_ADDRESS, uint8_t rawHeight = 32, uint8_t rawWidth = 128)
-	    : Adafruit_SSD1306(RST, rawHeight, rawWidth)
+	Adafruit_SSD1306_I2c(MicroBitI2C i2c, uint8_t i2cAddress = SSD_I2C_ADDRESS, uint8_t rawHeight = 32, uint8_t rawWidth = 128)
+	    : Adafruit_SSD1306(rawHeight, rawWidth)
 	    , mi2c(i2c)
 	    , mi2cAddress(i2cAddress)
 	    {
