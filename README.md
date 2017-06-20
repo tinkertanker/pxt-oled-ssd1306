@@ -43,6 +43,7 @@ Clears the display.
 
 ```sig
 OLED.clearDisplay()
+```
 
 The ``init`` block must be placed before this.
 
