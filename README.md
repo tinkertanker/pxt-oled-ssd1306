@@ -37,6 +37,15 @@ OLED.showNumber(123)
 
 The ``init`` block must be placed before this.
 
+
+### Clear Display
+Clears the display.
+
+```sig
+OLED.clearDisplay()
+
+The ``init`` block must be placed before this.
+
 ## Example: Counter
 The following code is a simple counter that displays an increasing number every second.
 
