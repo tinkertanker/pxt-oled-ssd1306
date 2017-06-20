@@ -1,7 +1,7 @@
 {
   "name": "pxt-ssd1306-microbit",
   "version": "1.0.0",
-    "dependencies": {},
+  "dependencies": {},
   "devDependencies": {
     "pxt": "^0.3.0",
     "pxt-microbit": "^0.9.76"

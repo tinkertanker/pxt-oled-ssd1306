@@ -9,31 +9,38 @@ This is the PXT Package for SSD1306 OLED controller, based on the Adafruit Ardui
 ### Initialize OLED Display
 Initializes the OLED display.
 
-Clears the screen and sets the cursor to (0, 0) to print text.
+Sets up the OLED display and prepares it for use by the micro:bit.
 
-Able to use 'show string' and 'show number' below.
+```sig
+OLED.init(64, 128);
+```
 
-In text output mode, wrapping is enabled.
-
-If text exceeds number of lines supported, the lines will 'shift up', like in a terminal.
+This block must be placed before any of the ``show`` blocks.
 
 
 ### Show String
-Prints a string to OLED, at cursor location.
+Displays a string on the OLED module.
 
-Requires OLED to be initialized for text display.
+```sig
+OLED.showString("hello, micro:bit!")
+```
+
+The ``init`` block must be placed before this.
 
 
 ### Show Number
-Prints a number to OLED, at cursor location.
+Displays a number on the OLED module.
 
-Requires OLED to be initialized for text display.
+```sig
+OLED.showNumber(123)
+```
 
+The ``init`` block must be placed before this.
 
 ## Example: Counter
 The following code is a simple counter that displays an increasing number every second.
 
-```typescript
+```blocks
 OLED.init(64, 128)
 let item = 0
 basic.forever(() => {
@@ -49,6 +56,4 @@ basic.forever(() => {
 
 ## Footnotes
 
-1.  Datasheet
-
-https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
+1.  Datasheet https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf
