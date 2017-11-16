@@ -5,7 +5,7 @@ This is the MakeCode Package for SSD1306 OLED controller, based on the Adafruit 
 ## Hardware Setup
 1. Insert the OLED display into the I2C ports on the break out board.
 
-## PXT Blocks
+## Blocks
 ### Initialize OLED Display
 Initializes the OLED display.
 
