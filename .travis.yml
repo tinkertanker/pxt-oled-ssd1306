@@ -22,6 +22,7 @@ addons:
 install:
   - nvm install 7
   - pip install yotta
+  - pip install pyopenssl
   - npm install
   - npm run pxt:init
   - npm run pxt:install
