@@ -42,7 +42,7 @@ The ``init`` block must be placed before this.
 Clears the display.
 
 ```sig
-OLED.clearDisplay()
+OLED.clear()
 ```
 
 The ``init`` block must be placed before this.
