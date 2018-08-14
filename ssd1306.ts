@@ -43,7 +43,7 @@ namespace OLED {
 
     /**
      * prints a number on the OLED display
-     * @param number number to display
+     * @param number number to display 
      */
     //% weight=96
     //% blockId=oled_print_number
@@ -54,4 +54,17 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
+    /**
+     * prints a number on the OLED display
+     * @param number number to display 
+     */
+    //% weight=102
+    //% blockId=oled_next_line
+    //% block="New Line"
+    //% async 
+    //% shim=OLED::NextLine
+    export function NextLine(): void {
+        return;
+    }
+
 }
