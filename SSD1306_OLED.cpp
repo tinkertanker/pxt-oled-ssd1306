@@ -38,7 +38,7 @@ namespace OLED {
 	}
 	
     //%
-    void NextLine (int number) {
+    void NextLine () {
 		oled->printf("\n");
 		oled->display();
 	}

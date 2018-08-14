@@ -14,6 +14,7 @@ namespace OLED {
     export function init(height: number, width: number): void {
         return;
     }
+
     /**
      *Prints Next Line
      */
