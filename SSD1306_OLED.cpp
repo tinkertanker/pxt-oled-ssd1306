@@ -49,7 +49,7 @@ namespace OLED {
 		int w = 21;
 		int h = 64;
 		for (int i = 0; i < 6;i++){
-			oled->fillRect(x, y, w, h, 0xFFFF);
+			oled->fillRect(x, y, w, h, 255);
 			x = x + w;
 			oled->display();
 		}
