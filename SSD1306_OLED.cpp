@@ -27,13 +27,19 @@ namespace OLED {
 	
 	//%
     void showString(StringData *text) {
-		oled->printf("%s\n", text->data);
+		oled->printf("%s", text->data);
 		oled->display();
     }
-    
+
     //%
     void showNumber (int number) {
-		oled->printf("%d\n", number);
+		oled->printf("%d", number);
+		oled->display();
+	}
+	
+    //%
+    void NextLine (int number) {
+		oled->printf("\n");
 		oled->display();
 	}
 
