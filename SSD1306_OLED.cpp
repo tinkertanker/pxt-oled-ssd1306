@@ -44,17 +44,7 @@ namespace OLED {
 	}
 	
 	//%
-	void LoadingScreen() {
-		int x,y = 0;
-		int w = 21;
-		int h = 64;
-		for (int i = 0; i < 6;i++){
-			oled->fillRect(x, y, w, h, 255);
-			x = x + w;
-			oled->display();
-		}
 
-	}
 
 	//%
 	void clearDisplay(){
@@ -106,6 +96,17 @@ namespace OLED {
     void fillTriangle(int x0, int y0, int x1, int y1, int x2, int y2){
     	oled->fillTriangle(x0, y0, x1, y1, x2, y2, 0xFFFF);
     }
+	void LoadingScreen() {
+		int x,y = 0;
+		int w = 21;
+		int h = 64;
+		for (int i = 0; i < 6;i++){
+			oled->fillRect(x, y, w, h, 255);
+			x = x + w;
+			oled->display();
+		}
+
+	}
 
     #define printf(...) uBit.serial.printf(__VA_ARGS__)
 
