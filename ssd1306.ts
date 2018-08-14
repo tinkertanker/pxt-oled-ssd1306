@@ -14,6 +14,16 @@ namespace OLED {
     export function init(height: number, width: number): void {
         return;
     }
+    /**
+     *Prints Next Line
+     */
+    //% blockId=oled_next_line
+    //% block="New Line"
+    //% async
+    //% shim=OLED::NextLine
+    export function Next_Line(): void {
+        return;
+    }
 
     /**
      * clears the screen.
@@ -54,16 +64,4 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
-    /**
-     *Prints Next Line
-     */
-    //% weight=120
-    //% blockId=oled_next_line
-    //% block="New Line"
-    //% async 
-    //% shim=OLED::NextLine
-    export function Next_Line(): void {
-        return;
-    }
-
 }
