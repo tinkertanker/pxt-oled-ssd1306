@@ -27,6 +27,17 @@ namespace OLED {
     }
 
     /**
+     *Shows a Loading Screen
+     */
+    //% blockId=oled_loading_screen
+    //% block="Loading Screen"
+    //% async
+    //% shim=OLED::LoadingScreen
+    export function Loading_Screen(): void {
+        return;
+    }
+
+    /**
      * clears the screen.
      */
     //% blockId=oled_clear_screen

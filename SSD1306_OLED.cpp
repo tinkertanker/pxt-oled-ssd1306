@@ -1,5 +1,7 @@
 #include "pxt.h"
 #include "Adafruit_SSD1306.h"
+#include <chrono>
+#include <thread>
 using namespace pxt;
 
 namespace OLED {
@@ -41,6 +43,20 @@ namespace OLED {
     void NextLine () {
 		oled->printf("\n");
 		oled->display();
+	}
+	
+	//%
+	void LoadingScreen() {
+		int x,y = 0;
+		int w = 21;
+		int h = 64;
+		for (int i = 0; i < 6;i++){
+			fillRect(x,y,w,h);
+			x = x + w;
+			std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+			oled->display();
+		}
+
 	}
 
 	//%
