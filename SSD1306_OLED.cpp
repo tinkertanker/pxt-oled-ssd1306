@@ -45,7 +45,8 @@ namespace OLED {
 	
 	//%
 	void LoadingScreen() {
-		int x,y = 0;
+		int x = 0;
+		int y = 128
 		int w = 21;
 		int h = 64;
 		for (int i = 0; i < 6;i++){
