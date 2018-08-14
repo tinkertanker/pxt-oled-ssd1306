@@ -55,15 +55,14 @@ namespace OLED {
         return;
     }
     /**
-     * prints a number on the OLED display
-     * @param number number to display 
+     *Prints Next Line
      */
-    //% weight=102
+    //% weight=120
     //% blockId=oled_next_line
     //% block="New Line"
     //% async 
     //% shim=OLED::NextLine
-    export function NextLine(): void {
+    export function Next_Line(): void {
         return;
     }
 
