@@ -1,13 +1,14 @@
 #include "pxt.h"
 #include "Adafruit_SSD1306.h"
-#include <thread>
-#include <chrono>
-using namespace pxt;
 
+using namespace pxt;
+MicroBit uBit;
 namespace OLED {
 	#define SSD1306_ADDRESS 0x78
 	#undef printf
-	
+
+	uBit.init();
+
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 	Adafruit_SSD1306_I2c *oled;
 
@@ -107,7 +108,6 @@ namespace OLED {
 			fillRect(x, y, w, h);
 			x = x + 21;
 			oled->display();
-			std::this_thread::sleep_for(std::chrono::milliseconds(500));
 		}
 
 	}
