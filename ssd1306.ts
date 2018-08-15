@@ -54,7 +54,6 @@ namespace OLED {
      * prints a string on the OLED display
      * @param text text to display
      */
-    //% weight=87 blockGap=8
     //% block="show (without automatic new line) |string  %text" 
     //% async
     //% blockId=oled_print_string
@@ -68,10 +67,9 @@ namespace OLED {
      * prints a string on the OLED display
      * @param text text to display
      */
-    //% weight=87 blockGap=8
     //% block="show (with automatic new line) |string  %text" 
     //% async
-    //% blockId=oled_print_string
+    //% blockId=oled_print_string1
     //% icon="\uf1ec"
     //% shim=OLED::showStringWithNewLine
     export function showString2(text: string): void {
@@ -97,7 +95,7 @@ namespace OLED {
      * @param number number to display 
      */
     //% weight=96
-    //% blockId=oled_print_number
+    //% blockId=oled_print_number1
     //% block="show (with automatic new line)|number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumberWithNewLine
