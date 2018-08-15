@@ -28,14 +28,26 @@ namespace OLED {
 	}
 	
 	//%
-    void showString(StringData *text) {
+    void showStringWithoutNewline(StringData *text) {
 		oled->printf("%s", text->data);
 		oled->display();
     }
 
+	//%
+    void showStringWithNewline(StringData *text) {
+		oled->printf("%s\n", text->data);
+		oled->display();
+    }
+
     //%
-    void showNumber (int number) {
+    void showNumberWithoutNewLine (int number) {
 		oled->printf("%d", number);
+		oled->display();
+	}
+	
+	//%
+    void showNumberWithNewLine (int number) {
+		oled->printf("%d\n", number);
 		oled->display();
 	}
 	

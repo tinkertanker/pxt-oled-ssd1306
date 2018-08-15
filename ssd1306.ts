@@ -19,7 +19,7 @@ namespace OLED {
      *Prints Next Line
      */
     //% blockId=oled_next_line
-    //% block="New Line"
+    //% block="new line"
     //% async
     //% shim=OLED::NextLine
     export function Next_Line(): void {
@@ -30,7 +30,7 @@ namespace OLED {
      *Shows a Loading Screen
      */
     //% blockId=oled_loading_screen
-    //% block="Loading Screen"
+    //% block="loading screen"
     //% async
     //% shim=OLED::LoadingScreen
     export function Loading_Screen(): void {
@@ -55,12 +55,26 @@ namespace OLED {
      * @param text text to display
      */
     //% weight=87 blockGap=8
-    //% block="show|string %text" 
+    //% block="show (without automatic new line) |string  %text" 
     //% async
     //% blockId=oled_print_string
     //% icon="\uf1ec"
-    //% shim=OLED::showString
-    export function showString(text: string): void {
+    //% shim=OLED::showStringWithoutNewLine
+    export function showString1(text: string): void {
+        console.log("display: " + text);
+        return;
+    }
+    /**
+     * prints a string on the OLED display
+     * @param text text to display
+     */
+    //% weight=87 blockGap=8
+    //% block="show (with automatic new line) |string  %text" 
+    //% async
+    //% blockId=oled_print_string
+    //% icon="\uf1ec"
+    //% shim=OLED::showStringWithNewLine
+    export function showString2(text: string): void {
         console.log("display: " + text);
         return;
     }
@@ -71,10 +85,23 @@ namespace OLED {
      */
     //% weight=96
     //% blockId=oled_print_number
-    //% block="show|number %number" blockGap=8
+    //% block="show (without automatic new line)|number %number" blockGap=8
     //% async 
-    //% shim=OLED::showNumber
-    export function showNumber(number: number): void {
+    //% shim=OLED::showNumberWithoutNewLine
+    export function showNumber1(number: number): void {
+        console.log("display: " + number);
+        return;
+    }
+    /**
+     * prints a number on the OLED display
+     * @param number number to display 
+     */
+    //% weight=96
+    //% blockId=oled_print_number
+    //% block="show (with automatic new line)|number %number" blockGap=8
+    //% async 
+    //% shim=OLED::showNumberWithNewLine
+    export function showNumber2(number: number): void {
         console.log("display: " + number);
         return;
     }
