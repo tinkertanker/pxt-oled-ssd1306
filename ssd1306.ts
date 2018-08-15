@@ -148,66 +148,7 @@ namespace OLED {
     export function drawLinear(x1:number,y1:number, x2:number, y2:number): void {
         return;
     }
-    /**
-     * @param x coordinate
-     * @param y coordinate
-     * @param w number of pixels
-     * @param h number of pixels
-     * @param r number of pixels
-     */
-    //% blockId=oled_fill_round_rect
-    //% block="fill round box on OLED with coordinates |x %x|y %y|w %w|h %h|r %r"
-    //% async 
-    //% shim=OLED::fillRoundRect
-    export function fillRoundRectangle(x:number,y:number, w:number,h:number,r:number): void {
-        return;
-    }
-    /**
-     * @param x number of pixels
-     * @param y number of pixels
-     * @param w number of pixels
-     * @param h number of pixels
-     * @param r number of pixels
-     */
-    //% blockId=oled_draw_roundrect
-    //% block="draw round rectangle on OLED with coordinates |x %x|y %y|w %w|h %h|r %r"
-    //% async 
-    //% shim=OLED::drawRoundRect
-    export function drawRoundRectangle(x:number,y:number, w:number,h:number,r:number): void {
-        return;
-    }
-    /**
-     * @param x0 coordinate of point on triangle
-     * @param y0 coordinate of point on triangle
-     * @param x1 coordinate of point on triangle
-     * @param y1 coordinate of point on triangle
-     * @param x2 coordinate of point on triangle
-     * @param y2 coordinate of point on triangle
-     * named fillTriangular because of similar reason as DrawCircle
-     */
-    //% blockId=oled_fill_triangle
-    //% block="fill triangle on OLED with 3 coordinates |x0 %x0|y0 %y0|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
-    //% async 
-    //% shim=OLED::fillTriangle
-    export function fillTriangular(x0:number,y0:number, x1:number, y1:number,x2:number,y2:number): void {
-        return;
-    }
-    /**
-     * @param x0 coordinate of point on triangle
-     * @param y0 coordinate of point on triangle
-     * @param x1 coordinate of point on triangle
-     * @param y1 coordinate of point on triangle
-     * @param x2 coordinate of point on triangle
-     * @param y2 coordinate of point on triangle
-     * named drawTriangular because of similar reason as DrawCircle
-     */
-    //% blockId=oled_draw_triangle
-    //% block="draw triangle on OLED with 3 coordinates |x0 %x0|y0 %y0|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
-    //% async 
-    //% shim=OLED::drawTriangle
-    export function drawTriangular(x0:number,y0:number, x1:number, y1:number,x2:number,y2:number): void {
-        return;
-    }  
+
 
 
 }
