@@ -53,22 +53,22 @@ namespace OLED {
 
 	//%
 	void drawCircle(int x, int y, int r){
-		oled->drawCircle(x, y, r, 0xFFFF);
+		oled->drawCircle(x, y, r, 1);
 	}
 
 	//%
 	void fillCircle(int x, int y, int r){
-		oled->fillCircle(x, y, r, 0xFFFF);
+		oled->fillCircle(x, y, r, 1);
 	}
 
 	//%
 	void drawLine(int x0, int y0, int x1, int y1){
-		oled->drawLine(x0, y0, x1, y1, 0xFFFF);
+		oled->drawLine(x0, y0, x1, y1, 1);
 	}
 
 	//%
 	void fillRect(int x, int y, int w, int h){
-		oled->fillRect(x, y, w, h, 0xFFFF);
+		oled->fillRect(x, y, w, h, 1);
 	}
 
 	//%
@@ -78,22 +78,22 @@ namespace OLED {
 
     //%
 	void fillRoundRect(int x, int y, int w, int h, int r){
-		oled->fillRoundRect(x, y, w, h, r, 0xFFFF);
+		oled->fillRoundRect(x, y, w, h, r, 1);
 	}
 
 	//%
     void drawRoundRect(int x, int y, int w, int h, int r){
-    	oled->drawRoundRect(x, y, w, h, r, 0xFFFF);
+    	oled->drawRoundRect(x, y, w, h, r, 1);
     }
 
     //%
     void drawTriangle(int x0, int y0, int x1, int y1, int x2, int y2){
-    	oled->drawTriangle(x0, y0, x1, y1, x2, y2, 0xFFFF);
+    	oled->drawTriangle(x0, y0, x1, y1, x2, y2, 1);
     }
 
     //%
     void fillTriangle(int x0, int y0, int x1, int y1, int x2, int y2){
-    	oled->fillTriangle(x0, y0, x1, y1, x2, y2, 0xFFFF);
+    	oled->fillTriangle(x0, y0, x1, y1, x2, y2, 1);
     }
 		
 	//%
@@ -102,7 +102,7 @@ namespace OLED {
 		int w = 21;
 		int h = 64;
 		for (int i = 0; i < 6;i++){
-			oled->fillRect(x, y, w, h, 0xFFFF);
+			fillRect(x, y, w, h, 1);
 			x = x + 21;
 			oled->display();
 		}
