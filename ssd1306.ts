@@ -86,34 +86,5 @@ namespace OLED {
     export function drawRectangle(x:number,y:number, w: number, h: number): void {
         return;
     }
-    /**
-     * displays a filled white box
-     */
-    //% blockId=oled_fill_rectangle
-    //% block="fill box on OLED with coordinates x %x|y %y|h %h|w %w"
-    //% async 
-    //% shim=OLED::fillRect
-    export function fillRectangle(x:number,y:number, w: number, h: number): void {
-        return;
-    }
-    /**
-     * displays a empty white circle
-     */
-    //% blockId=oled_draw_circle
-    //% block="draw circle on OLED with coordinates x %x|y %y|r %r"
-    //% async 
-    //% shim=OLED::drawCircle
-    export function draw_circle(x:number,y:number, r: number): void {
-        return;
-    }
-    /**
-     * displays a filled white circle
-     */
-    //% blockId=oled_fill_circle
-    //% block="fill circle on OLED with coordinates x %x|y %y|r %r"
-    //% async 
-    //% shim=OLED::fillCircle
-    export function fill_circle(x:number,y:number, r: number): void {
-        return;
-    }
+
 }
