@@ -2,12 +2,11 @@
 #include "Adafruit_SSD1306.h"
 
 using namespace pxt;
-MicroBit uBit;
+
 namespace OLED {
 	#define SSD1306_ADDRESS 0x78
 	#undef printf
 
-	uBit.init();
 
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 	Adafruit_SSD1306_I2c *oled;
