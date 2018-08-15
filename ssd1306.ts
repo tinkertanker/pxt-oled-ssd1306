@@ -77,13 +77,13 @@ namespace OLED {
         return;
     }
     /**
-     * displays a white box
+     * displays a empty white box
      */
-    //% blockId=oled_fill_rectangle
-    //% block="fill OLED with coordinates x %x|y %y|h %h|w %w"
+    //% blockId=oled_draw_rectangle
+    //% block="draw box on OLED with coordinates x %x|y %y|h %h|w %w"
     //% async 
-    //% shim=OLED::fillRect
-    export function fillRectangle(x:number,y:number, w: number, h: number): void {
+    //% shim=OLED::drawRect
+    export function drawRectangle(x:number,y:number, w: number, h: number): void {
         return;
     }
 }
