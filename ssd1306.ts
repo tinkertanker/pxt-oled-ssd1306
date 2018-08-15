@@ -80,6 +80,9 @@ namespace OLED {
     }
     /**
      * @param number number of pixels
+     * @param number
+     * @param number
+     * @param number
      * displays a white box
      */
     //% blockId=oled_fill_rectangle
