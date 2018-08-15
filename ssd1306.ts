@@ -80,12 +80,13 @@ namespace OLED {
     }
     /**
      * @param x number of pixels
-     * @param y
-     * @param w
-     * @param h
+     * @param y number of pixels
+     * @param w number of pixels
+     * @param h number of pixels
      * displays a white box
+     * why does this not work lol
      */
-    //% blockId=oled_fill_rectangle
+    //% blockId=oled_fill_rect
     //% block="fill box on OLED with coordinates |x %x|y %y|w %w|h %h"
     //% async 
     //% shim=OLED::fillRect
