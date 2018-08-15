@@ -149,17 +149,17 @@ namespace OLED {
         return;
     }
     /**
-     * @param x number of pixels
-     * @param y number of pixels
+     * @param x coordinate
+     * @param y coordinate
      * @param w number of pixels
      * @param h number of pixels
      * @param r number of pixels
      */
     //% blockId=oled_fill_round_rect
-    //% block="fill box on OLED with coordinates |x %x|y %y|w %w|h %h|r %r"
+    //% block="fill round box on OLED with coordinates |x %x|y %y|w %w|h %h|r %r"
     //% async 
     //% shim=OLED::fillRoundRect
-    export function fillRoundRectangle(x:number,y:number, w:number, h:number,r:number): void {
+    export function fillRoundRectangle(x:number,y:number, w:number,h:number,r:number): void {
         return;
     }
     /**
@@ -169,11 +169,11 @@ namespace OLED {
      * @param h number of pixels
      * @param r number of pixels
      */
-    //% blockId=oled_draw_round_rect
-    //% block="draw empty box on OLED with coordinates |x %x|y %y|w %w|h %h|r %r"
+    //% blockId=oled_draw_roundrect
+    //% block="draw round rectangle on OLED with coordinates |x %x|y %y|w% w|h %h|r %r"
     //% async 
     //% shim=OLED::drawRoundRect
-    export function drawRoundRectangle(x:number,y:number, w:number, h:number,r:number): void {
+    export function drawRoundRectangle(x:number,y:number, w:number,h:number,r:number): void {
         return;
     }
     /**
@@ -208,4 +208,6 @@ namespace OLED {
     export function drawTriangular(x0:number,y0:number, x1:number, y1:number,x2:number,y2:number): void {
         return;
     }  
+
+
 }
