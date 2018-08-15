@@ -170,7 +170,7 @@ namespace OLED {
      * @param r number of pixels
      */
     //% blockId=oled_draw_roundrect
-    //% block="draw round rectangle on OLED with coordinates |x %x|y %y|w% w|h %h|r %r"
+    //% block="draw round rectangle on OLED with coordinates |x %x|y %y|w %w|h %h|r %r"
     //% async 
     //% shim=OLED::drawRoundRect
     export function drawRoundRectangle(x:number,y:number, w:number,h:number,r:number): void {
