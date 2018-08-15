@@ -77,15 +77,14 @@ namespace OLED {
         return;
     }
     /**
-     * prints a number on the OLED display
-     * @param number number to display 
+     * displays a white box
      */
     //% weight=96
     //% blockId=oled_fill_rectangle
-    //% block="fill OLED with height %height|width %width"
+    //% block="fill OLED with coordinates x %x| y %y| height %height|width %width"
     //% async 
     //% shim=OLED::fillRect
-    export function fillRectangle(height: number, width: number): void {
+    export function fillRectangle(x:number,y:number, height: number, width: number): void {
         return;
     }
 }
