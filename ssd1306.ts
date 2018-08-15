@@ -79,10 +79,10 @@ namespace OLED {
         return;
     }
     /**
-     * @param number number of pixels
-     * @param number
-     * @param number
-     * @param number
+     * @param x number of pixels
+     * @param y
+     * @param w
+     * @param h
      * displays a white box
      */
     //% blockId=oled_fill_rectangle
