@@ -85,6 +85,7 @@ namespace OLED {
      * @param h number of pixels
      * displays a white box
      * why does this not work lol
+     * whoever works on this after me help me figure out why you need to show a string to get the box to display.
      */
     //% blockId=oled_fill_rect
     //% block="fill box on OLED with coordinates |x %x|y %y|w %w|h %h"
