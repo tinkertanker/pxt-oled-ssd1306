@@ -103,7 +103,7 @@ namespace OLED {
     //% block="draw circle on OLED with coordinates x %x|y %y|r %r"
     //% async 
     //% shim=OLED::drawCircle
-    export function drawCircle(x:number,y:number, r: number): void {
+    export function draw_circle(x:number,y:number, r: number): void {
         return;
     }
     /**
@@ -113,7 +113,7 @@ namespace OLED {
     //% block="fill circle on OLED with coordinates x %x|y %y|r %r"
     //% async 
     //% shim=OLED::fillCircle
-    export function fillCircle(x:number,y:number, r: number): void {
+    export function fill_circle(x:number,y:number, r: number): void {
         return;
     }
 }
