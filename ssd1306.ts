@@ -79,12 +79,11 @@ namespace OLED {
     /**
      * displays a white box
      */
-    //% weight=96
     //% blockId=oled_fill_rectangle
-    //% block="fill OLED with coordinates x %x| y %y| height %height|width %width"
+    //% block="fill OLED with coordinates x %x|y %y|h %h|w %w"
     //% async 
     //% shim=OLED::fillRect
-    export function fillRectangle(x:number,y:number, height: number, width: number): void {
+    export function fillRectangle(x:number,y:number, w: number, h: number): void {
         return;
     }
 }
