@@ -189,7 +189,7 @@ namespace OLED {
     //% block="fill triangle on OLED with 3 coordinates |x0 %x0|y0 %y0|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
     //% async 
     //% shim=OLED::fillTriangle
-    export function fillTriangular(x0:number,y0:number, x1:number, y2:number,x2:number,y2:number): void {
+    export function fillTriangular(x0:number,y0:number, x1:number, y1:number,x2:number,y2:number): void {
         return;
     }
     /**
@@ -205,7 +205,7 @@ namespace OLED {
     //% block="draw triangle on OLED with 3 coordinates |x0 %x0|y0 %y0|x1 %x1|y1 %y1|x2 %x2|y2 %y2"
     //% async 
     //% shim=OLED::drawTriangle
-    export function drawTriangular(x0:number,y0:number, x1:number, y2:number,x2:number,y2:number): void {
+    export function drawTriangular(x0:number,y0:number, x1:number, y1:number,x2:number,y2:number): void {
         return;
     }  
 }
