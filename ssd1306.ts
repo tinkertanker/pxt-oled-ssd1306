@@ -102,7 +102,7 @@ namespace OLED {
      * @param h number of pixels
      */
     //% blockId=oled_draw_rect
-    //% block="fill box on OLED with coordinates |x %x|y %y|w %w|h %h"
+    //% block="draw box on OLED with coordinates |x %x|y %y|w %w|h %h"
     //% async 
     //% shim=OLED::drawRect
     export function drawRectangle(x:number,y:number, w:number, h:number): void {
