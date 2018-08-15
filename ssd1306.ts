@@ -41,7 +41,7 @@ namespace OLED {
      * displays a white box
      */
     //% blockId=oled_fill_rectangle
-    //% block="fill box on OLED with coordinates x %x|y %y|w %w|h %h"
+    //% block="fill box on OLED with coordinates | x %x|y %y|w %w|h %h"
     //% async 
     //% shim=OLED::fillRect
     export function fillRectangle(x:number,y:number, w: number, h: number): void {
