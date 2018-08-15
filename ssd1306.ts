@@ -76,4 +76,16 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
+    /**
+     * prints a number on the OLED display
+     * @param number number to display 
+     */
+    //% weight=96
+    //% blockId=oled_fill_rectangle
+    //% block="fill OLED with height %height|width %width"
+    //% async 
+    //% shim=OLED::fillRect
+    export function fillRectangle(height: number, width: number): void {
+        return;
+    }
 }
