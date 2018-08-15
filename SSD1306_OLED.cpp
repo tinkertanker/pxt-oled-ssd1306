@@ -45,8 +45,6 @@ namespace OLED {
 		oled->display();
 	}
 
-
-
 	//%
 	void clearDisplay(){
 		oled->clearDisplay();
@@ -76,6 +74,7 @@ namespace OLED {
 	//%
     void drawRect(int x, int y, int w, int h){
     	oled->drawRect(x, y, w, h, 1);
+		oled->display();
     }
 
     //%
