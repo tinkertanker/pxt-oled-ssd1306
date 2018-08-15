@@ -73,7 +73,7 @@ namespace OLED {
 
 	//%
     void drawRect(int x, int y, int w, int h){
-    	oled->drawRect(x, y, w, h, 0xFFFF);
+    	oled->drawRect(x, y, w, h, 1);
     }
 
     //%
