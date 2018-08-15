@@ -36,6 +36,17 @@ namespace OLED {
     export function Loading_Screen(): void {
         return;
     }
+    
+    /**
+     * displays a white box
+     */
+    //% blockId=oled_fill_rectangle
+    //% block="fill box on OLED with coordinates x %x|y %y|h %h|w %w"
+    //% async 
+    //% shim=OLED::fillRect
+    export function fillRectangle(x:number,y:number, w: number, h: number): void {
+        return;
+    }
 
     /**
      * clears the screen.
@@ -76,15 +87,6 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
-    /**
-     * displays a white box
-     */
-    //% blockId=oled_fill_rectangle
-    //% block="fill box on OLED with coordinates x %x|y %y|h %h|w %w"
-    //% async 
-    //% shim=OLED::fillRect
-    export function fillRectangle(x:number,y:number, w: number, h: number): void {
-        return;
-    }
+
 
 }
