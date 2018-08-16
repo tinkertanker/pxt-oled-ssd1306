@@ -51,7 +51,7 @@ namespace OLED {
     }
 
     /**
-     * prints a string on the OLED display
+     * prints a string on the OLED display without a newline
      * @param text text to display
      */
     //% block="show (without newline) |string  %text" 
@@ -64,7 +64,7 @@ namespace OLED {
         return;
     }
     /**
-     * prints a string on the OLED display
+     * prints a string on the OLED display with a newline
      * @param text text to display
      */
     //% block="show |string  %text" 
@@ -78,7 +78,7 @@ namespace OLED {
     }
 
     /**
-     * prints a number on the OLED display
+     * prints a number on the OLED display without a newline
      * @param number number to display 
      */
     //% weight=96
@@ -91,7 +91,7 @@ namespace OLED {
         return;
     }
     /**
-     * prints a number on the OLED display
+     * prints a number on the OLED display with a newline
      * @param number number to display 
      */
     //% weight=96
@@ -104,14 +104,11 @@ namespace OLED {
         return;
     }
     /**
+     * draws a filled rectangle
      * @param x number of pixels
      * @param y number of pixels
      * @param w number of pixels
      * @param h number of pixels
-     * displays a white box
-     * why does this not work lol
-     * whoever works on this after me help me figure out why you need to show a string to get the box to display.
-     * haha nevermind I got it to work. The people before me didnt update the oled every time this function was run in SSD1306_OLED.cpp
      */
     //% blockId=oled_fill_rect
     //% block="draw filled box with coordinates |x %x|y %y|w %w|h %h"
@@ -121,6 +118,7 @@ namespace OLED {
         return;
     }
     /**
+     * draws an outlined rectangle
      * @param x number of pixels
      * @param y number of pixels
      * @param w number of pixels
@@ -134,16 +132,16 @@ namespace OLED {
         return;
     }
     /**
+     * draws a filled circle
      * @param x number of pixels
      * @param y number of pixels
      * @param r number of pixels
-     * I named the function fillCirclar cus I don't know if it will conflict with the cpp function. Probably not, but whoever wants to can test this.
      */
     //% blockId=oled_fill_circle
     //% block="draw filled circle with coordinates |x %x|y %y|r %r"
     //% async 
     //% shim=OLED::fillCircle
-    export function fillCircular(x:number,y:number, r:number): void {
+    export function fillCircle(x:number,y:number, r:number): void {
         return;
     }
     /**
