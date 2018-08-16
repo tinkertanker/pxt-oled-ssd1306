@@ -22,7 +22,7 @@ namespace OLED {
     //% block="insert newline"
     //% async
     //% shim=OLED::NextLine
-    export function Next_Line(): void {
+    export function nextLine(): void {
         return;
     }
 
@@ -33,7 +33,7 @@ namespace OLED {
     //% block="show loading screen"
     //% async
     //% shim=OLED::LoadingScreen
-    export function Loading_Screen(): void {
+    export function loadingScreen(): void {
         return;
     }
 
@@ -54,7 +54,7 @@ namespace OLED {
       * @param text text to display
       */
      //% weight=87 blockGap=8
-     //% block="show (without new line)|string %text" 
+     //% block="show (without newline)|string %text" 
      //% async
      //% blockId=oled_print_stringNoNewLine
      //% icon="\uf1ec"
@@ -68,7 +68,7 @@ namespace OLED {
       * @param text text to display
       */
      //% weight=87 blockGap=8
-     //% block="show (with new line)|string %text" 
+     //% block="show|string %text" 
      //% async
      //% blockId=oled_print_stringWithNewLine
      //% icon="\uf1ec"
@@ -97,7 +97,7 @@ namespace OLED {
      */
     //% weight=96
     //% blockId=oled_print_number1
-    //% block="show |number %number" blockGap=8
+    //% block="show|number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumberWithNewLine
     export function showNumber2(number: number): void {
