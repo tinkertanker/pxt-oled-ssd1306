@@ -19,7 +19,7 @@ namespace OLED {
      *Prints Next Line
      */
     //% blockId=oled_next_line
-    //% block="new line"
+    //% block="insert newline"
     //% async
     //% shim=OLED::NextLine
     export function Next_Line(): void {
@@ -30,7 +30,7 @@ namespace OLED {
      *Shows a Loading Screen
      */
     //% blockId=oled_loading_screen
-    //% block="loading screen"
+    //% block="show loading screen"
     //% async
     //% shim=OLED::LoadingScreen
     export function Loading_Screen(): void {
@@ -54,7 +54,7 @@ namespace OLED {
      * prints a string on the OLED display
      * @param text text to display
      */
-    //% block="show (without automatic new line) |string  %text" 
+    //% block="show (without newline) |string  %text" 
     //% async
     //% blockId=oled_print_string
     //% icon="\uf1ec"
@@ -67,7 +67,7 @@ namespace OLED {
      * prints a string on the OLED display
      * @param text text to display
      */
-    //% block="show (with automatic new line) |string  %text" 
+    //% block="show |string  %text" 
     //% async
     //% blockId=oled_print_string1
     //% icon="\uf1ec"
@@ -83,7 +83,7 @@ namespace OLED {
      */
     //% weight=96
     //% blockId=oled_print_number
-    //% block="show (without automatic new line)|number %number" blockGap=8
+    //% block="show (without newline)|number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumberWithoutNewLine
     export function showNumber1(number: number): void {
@@ -96,7 +96,7 @@ namespace OLED {
      */
     //% weight=96
     //% blockId=oled_print_number1
-    //% block="show (with automatic new line)|number %number" blockGap=8
+    //% block="show |number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumberWithNewLine
     export function showNumber2(number: number): void {
@@ -114,7 +114,7 @@ namespace OLED {
      * haha nevermind I got it to work. The people before me didnt update the oled every time this function was run in SSD1306_OLED.cpp
      */
     //% blockId=oled_fill_rect
-    //% block="fill box on OLED with coordinates |x %x|y %y|w %w|h %h"
+    //% block="draw filled box with coordinates |x %x|y %y|w %w|h %h"
     //% async 
     //% shim=OLED::fillRect
     export function fillRectangle(x:number,y:number, w:number, h:number): void {
@@ -127,7 +127,7 @@ namespace OLED {
      * @param h number of pixels
      */
     //% blockId=oled_draw_rect
-    //% block="draw box on OLED with coordinates |x %x|y %y|w %w|h %h"
+    //% block="draw outlined box with coordinates |x %x|y %y|w %w|h %h"
     //% async 
     //% shim=OLED::drawRect
     export function drawRectangle(x:number,y:number, w:number, h:number): void {
@@ -140,37 +140,37 @@ namespace OLED {
      * I named the function fillCirclar cus I don't know if it will conflict with the cpp function. Probably not, but whoever wants to can test this.
      */
     //% blockId=oled_fill_circle
-    //% block="fill circle on OLED with coordinates |x %x|y %y|r %r"
+    //% block="draw filled circle with coordinates |x %x|y %y|r %r"
     //% async 
     //% shim=OLED::fillCircle
     export function fillCircular(x:number,y:number, r:number): void {
         return;
     }
     /**
-     * @param x number of pixels
-     * @param y number of pixels
-     * @param r number of pixels
-     * I named the function drawCirclar cus I don't know if it will conflict with the cpp function. Probably not, but whoever wants to can test this.
+     * draws an outlined cirle
+     * @param x x-coordinate of centre
+     * @param y y-coordinate of centre
+     * @param r radius
      */
     //% blockId=oled_draw_circle
-    //% block="draw circle on OLED with coordinates |x %x|y %y|r %r"
+    //% block="draw outlined circle with coordinates of centre |x %x|y %y| and radius r %r"
     //% async 
     //% shim=OLED::drawCircle
-    export function drawCircular(x:number,y:number, r:number): void {
+    export function drawCircle(x:number,y:number, r:number): void {
         return;
     }
     /**
+     * draws a line
      * @param x1 coordinate of x1
      * @param y1 coordinate of y1
      * @param x2 coordinate of x2
      * @param y2 coordinate of y2
-     * named it drawLinear for the same reason as drawCircular
      */
     //% blockId=oled_draw_line
     //% block="draw line OLED with coordinates |x1 %x1|y1 %y1|x2 %x2|y2 %y2"
     //% async 
     //% shim=OLED::drawLine
-    export function drawLinear(x1:number,y1:number, x2:number, y2:number): void {
+    export function drawLine(x1:number,y1:number, x2:number, y2:number): void {
         return;
     }
 
