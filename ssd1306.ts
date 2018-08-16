@@ -57,7 +57,7 @@ namespace OLED {
     //% weight=87 blockGap=8
     //% block="show (without newline) |string  %text" 
     //% async
-    //% blockId=oled_print_string
+    //% blockId=oled_print_string1
     //% icon="\uf1ec"
     //% shim=OLED::showStringWithoutNewLine
     export function showString1(text: string): void {
@@ -71,7 +71,7 @@ namespace OLED {
     //% weight=87 blockGap=8
     //% block="show |string  %text" 
     //% async
-    //% blockId=oled_print_string1
+    //% blockId=oled_print_string2
     //% icon="\uf1ec"
     //% shim=OLED::showStringWithNewLine
     export function showString2(text: string): void {
