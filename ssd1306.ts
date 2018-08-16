@@ -54,6 +54,7 @@ namespace OLED {
      * prints a string on the OLED display without a newline
      * @param text text to display
      */
+    //% weight=87 blockGap=8
     //% block="show (without newline) |string  %text" 
     //% async
     //% blockId=oled_print_string
@@ -67,6 +68,7 @@ namespace OLED {
      * prints a string on the OLED display with a newline
      * @param text text to display
      */
+    //% weight=87 blockGap=8
     //% block="show |string  %text" 
     //% async
     //% blockId=oled_print_string1
