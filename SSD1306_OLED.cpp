@@ -29,11 +29,17 @@ namespace OLED {
 	
 
 	//%
-    void showString(StringData *text) {
+    void showStringNoNewLine(StringData *text) {
 		oled->printf("%s", text->data);
 		oled->display();
     }
 
+	//%
+    void showStringWithNewLine(StringData *text) {
+		oled->printf("%s\n", text->data);
+		oled->display();
+    }
+	
     //%
     void showNumberWithoutNewLine (int number) {
 		oled->printf("%d", number);

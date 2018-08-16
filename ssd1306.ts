@@ -54,16 +54,29 @@ namespace OLED {
       * @param text text to display
       */
      //% weight=87 blockGap=8
-     //% block="show|string %text" 
+     //% block="show (without new line)|string %text" 
      //% async
-     //% blockId=oled_print_string
+     //% blockId=oled_print_stringNoNewLine
      //% icon="\uf1ec"
-     //% shim=OLED::showString
-     export function showString(text: string): void {
+     //% shim=OLED::showStringNoNewLine
+     export function showStringNoNewLine(text: string): void {
         console.log("display: " + text);
         return;
     }
-
+     /**
+      * prints a string on the OLED display
+      * @param text text to display
+      */
+     //% weight=87 blockGap=8
+     //% block="show (with new line)|string %text" 
+     //% async
+     //% blockId=oled_print_stringWithNewLine
+     //% icon="\uf1ec"
+     //% shim=OLED::showStringWithNewLine
+     export function showStringWithNewLine(text: string): void {
+        console.log("display: " + text);
+        return;
+    }
 
     /**
      * prints a number on the OLED display without a newline
