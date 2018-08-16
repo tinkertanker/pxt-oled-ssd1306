@@ -27,15 +27,10 @@ namespace OLED {
 		oled->setTextCursor(0, 0);
 	}
 	
-	//%
-    void showStringWithoutNewline(StringData *text) {
-		oled->printf("%s", text->data);
-		oled->display();
-    }
 
 	//%
-    void showStringWithNewline(StringData *text) {
-		oled->printf("%s\n", text->data);
+    void showString(StringData *text) {
+		oled->printf("%s", text->data);
 		oled->display();
     }
 
