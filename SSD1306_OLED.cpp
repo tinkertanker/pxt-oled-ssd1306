@@ -132,8 +132,9 @@ namespace OLED {
 
 	//%
 	void showProgress(int progress) {
+		oled->clearDisplay();
+		drawRect(0,21,128,21);
 		fillRect(0,21,progress*128/100,21);
-		oled->display();
 	}
     #define printf(...) uBit.serial.printf(__VA_ARGS__)
 
