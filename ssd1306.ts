@@ -174,6 +174,16 @@ namespace OLED {
         return;
     }
 
-
+    /**
+     * @param progress current progress
+     * Show a progress bar with specified percentage of progress
+     */
+    //% blockId=oled_show_progress
+    //% block="show progress of percentage progress %progress|"
+    //% async 
+    //% shim=OLED::showProgress
+    export function showProgress(progress:number): void {
+        return;
+    }
 
 }
