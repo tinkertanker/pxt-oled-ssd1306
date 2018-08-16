@@ -54,7 +54,7 @@ namespace OLED {
       * @param text text to display
       */
      //% weight=87 blockGap=8
-     //% block="show (without new line)|string %text" 
+     //% block="show (without newline)|string %text" 
      //% async
      //% blockId=oled_print_stringNoNewLine
      //% icon="\uf1ec"
