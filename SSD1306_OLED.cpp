@@ -27,18 +27,19 @@ namespace OLED {
 		oled->setTextCursor(0, 0);
 	}
 	
+
 	//%
-    void showStringWithoutNewline(StringData *text) {
+    void showStringNoNewLine(StringData *text) {
 		oled->printf("%s", text->data);
 		oled->display();
     }
 
 	//%
-    void showStringWithNewline(StringData *text) {
+    void showStringWithNewLine(StringData *text) {
 		oled->printf("%s\n", text->data);
 		oled->display();
     }
-
+	
     //%
     void showNumberWithoutNewLine (int number) {
 		oled->printf("%d", number);
@@ -130,6 +131,12 @@ namespace OLED {
 
 	}
 
+	//%
+	void showProgress(int progress) {
+		oled->clearDisplay();
+		drawRect(0,21,128,21);
+		fillRect(0,21,progress*128/100,21);
+	}
     #define printf(...) uBit.serial.printf(__VA_ARGS__)
 
 }
