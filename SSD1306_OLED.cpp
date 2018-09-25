@@ -62,6 +62,7 @@ namespace OLED {
 	void clearDisplay(){
 		oled->clearDisplay();
 		oled->display();
+		oled->setTextCursor(0, 0);
 	}
 
 	//%
