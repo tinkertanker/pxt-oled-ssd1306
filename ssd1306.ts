@@ -1,13 +1,13 @@
-//% icon="\uf26c"
-//% color="255" weight="90"
+//% color=#27b0ba weight=100 icon="\uf26c"
 namespace OLED {
 
     /**
      * initialises the i2c OLED display
-     * @param height height (in pixels)
-     * @param width width (in pixels)
+     * @param height height (in pixels), eg: 64
+     * @param width width (in pixels), eg: 128
      */
     //% blockId=oled_init_terminal
+    //% weight=100
     //% block="initialize OLED with height %height|width %width"
     //% icon="\uf1ec" 
     //% shim=OLED::init_terminal
@@ -51,9 +51,9 @@ namespace OLED {
     }
      /**
       * prints a string on the OLED display
-      * @param text text to display
+      * @param text text to display, eg: "Hello, OLED!"
       */
-     //% weight=87 blockGap=8
+     //% weight=92 blockGap=8
      //% block="show (without newline)|string %text" 
      //% async
      //% blockId=oled_print_stringNoNewLine
@@ -65,9 +65,9 @@ namespace OLED {
     }
      /**
       * prints a string on the OLED display
-      * @param text text to display
+      * @param text text to display, eg: "Hello, OLED!"
       */
-     //% weight=87 blockGap=8
+     //% weight=94 blockGap=8
      //% block="show|string %text" 
      //% async
      //% blockId=oled_print_stringWithNewLine
@@ -82,7 +82,7 @@ namespace OLED {
      * prints a number on the OLED display without a newline
      * @param number number to display 
      */
-    //% weight=96
+    //% weight=93
     //% blockId=oled_print_number
     //% block="show (without newline)|number %number" blockGap=8
     //% async 
@@ -95,7 +95,7 @@ namespace OLED {
      * prints a number on the OLED display with a newline
      * @param number number to display 
      */
-    //% weight=96
+    //% weight=95
     //% blockId=oled_print_number1
     //% block="show|number %number" blockGap=8
     //% async 
