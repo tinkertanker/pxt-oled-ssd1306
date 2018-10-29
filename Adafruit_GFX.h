@@ -58,7 +58,7 @@ class Adafruit_GFX : public Stream
         , cursor_y(0)
         , textcolor(WHITE)
         , textbgcolor(BLACK)
-        , textsize(2)
+        , textsize(1)
         , rotation(0)
         , wrap(true)
         {};
