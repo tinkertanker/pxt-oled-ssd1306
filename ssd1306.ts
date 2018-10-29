@@ -87,7 +87,7 @@ namespace OLED {
     //% block="show (without newline)|number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumberWithoutNewLine
-    export function showNumber1(number: number): void {
+    export function showNumberNoNewLine(number: number): void {
         console.log("display: " + number);
         return;
     }
@@ -100,7 +100,7 @@ namespace OLED {
     //% block="show|number %number" blockGap=8
     //% async 
     //% shim=OLED::showNumberWithNewLine
-    export function showNumber2(number: number): void {
+    export function showNumberWithNewLine(number: number): void {
         console.log("display: " + number);
         return;
     }
