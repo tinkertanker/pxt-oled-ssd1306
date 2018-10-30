@@ -30,13 +30,13 @@ namespace OLED {
 
 	//%
     void showStringNoNewLine(String text) {
-		oled->printf("%s", text->data);
+		oled->printf("%s", PXT_BUFFER_DATA(text));
 		oled->display();
     }
 
 	//%
     void showStringWithNewLine(String text) {
-		oled->printf("%s\n", text->data);
+		oled->printf("%s\n", PXT_BUFFER_DATA(text));
 		oled->display();
     }
 	
