@@ -30,6 +30,7 @@ All text above, and the splash screen must be included in any redistribution
 #include <vector>
 #include <algorithm>
 
+
 // A DigitalOut sub-class that provides a constructed default state
 class DigitalOut2 : public DigitalOut
 {
@@ -42,6 +43,8 @@ public:
 
 #define SSD1306_EXTERNALVCC 0x1
 #define SSD1306_SWITCHCAPVCC 0x2
+#define SSD1306_COLUMNADDR 0x21
+#define SSD1306_PAGEADDR 0x22
 
 /** The pure base class for the SSD1306 display driver.
  *
@@ -128,6 +131,13 @@ public:
 protected:
 	virtual void sendDisplayBuffer()
 	{
+		command(SSD1306_PAGEADDR);
+		command(0x0);
+		command(0xFF);
+		command(SSD1306_COLUMNADDR);
+		command(0x0);
+		command(_rawWidth - 1);
+
 		char buff[17];
 		buff[0] = 0x40; // Data Mode
 
@@ -140,6 +150,7 @@ protected:
 				buff[x] = buffer[i+x-1];
 			mi2c.write(mi2cAddress, buff, sizeof(buff));
 		}
+
 	};
 
 	MicroBitI2C mi2c;
