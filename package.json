@@ -1,0 +1,14 @@
+{
+  "name": "pxt-oled-ssd1306",
+  "version": "1.2.6",
+  "dependencies": {},
+  "devDependencies": {
+    "pxt": "^0.3.0",
+    "pxt-microbit": "^0.9.76"
+  },
+  "scripts": {
+    "pxt:init": "pxt target microbit",
+    "pxt:install": "pxt install",
+    "test": "pxt test"
+  }
+}
