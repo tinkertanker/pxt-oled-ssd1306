@@ -12,7 +12,6 @@ namespace OLED {
 	#define PXT_STRING_DATA(str) str->data
 	#endif
 
-
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 	Adafruit_SSD1306_I2c *oled;
 
