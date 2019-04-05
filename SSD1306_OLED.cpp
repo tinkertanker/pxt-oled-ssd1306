@@ -7,6 +7,10 @@ namespace OLED {
 	#define SSD1306_ADDRESS 0x78
 	#undef printf
 
+	// maintain compatibility with pre-unicode versions of microbit
+	#ifndef PXT_STRING_DATA
+	#define PXT_STRING_DATA(str) str->data
+	#endif
 
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
 	Adafruit_SSD1306_I2c *oled;
@@ -30,13 +34,13 @@ namespace OLED {
 
 	//%
     void showStringNoNewLine(String text) {
-		oled->printf("%s", PXT_BUFFER_DATA(text));
+		oled->printf("%s", PXT_STRING_DATA(text));
 		oled->display();
     }
 
 	//%
     void showStringWithNewLine(String text) {
-		oled->printf("%s\n", PXT_BUFFER_DATA(text));
+		oled->printf("%s\n", PXT_STRING_DATA(text));
 		oled->display();
     }
 	
