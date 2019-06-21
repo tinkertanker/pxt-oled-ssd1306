@@ -9,7 +9,7 @@ namespace OLED {
 
 	// maintain compatibility with pre-unicode versions of microbit
 	#ifndef PXT_STRING_DATA
-	#define PXT_STRING_DATA(str) str->data
+	#define PXT_STRING_DATA(str) str->getUTF8Data()
 	#endif
 
 	MicroBitI2C i2c(I2C_SDA0, I2C_SCL0);
