@@ -26,18 +26,6 @@ namespace OLED {
         return;
     }
 
-    /**
-     *Shows a Loading Screen
-     */
-    //% blockId=oled_loading_screen
-    //% block="show loading screen"
-    //% async
-    //% shim=OLED::LoadingScreen
-    export function loadingScreen(): void {
-        return;
-    }
-
-
 
     /**
      * clears the screen.
@@ -104,87 +92,6 @@ namespace OLED {
         console.log("display: " + number);
         return;
     }
-
-    
-    // /**
-    //  * draws a filled rectangle
-    //  * @param x number of pixels
-    //  * @param y number of pixels
-    //  * @param w number of pixels
-    //  * @param h number of pixels
-    //  */
-    // //% blockId=oled_fill_rect
-    // //% block="draw filled box with coordinates |x %x|y %y|w %w|h %h"
-    // //% async 
-    // //% shim=OLED::fillRect
-    // export function fillRectangle(x:number,y:number, w:number, h:number): void {
-    //     return;
-    // }
-    // /**
-    //  * draws an outlined rectangle
-    //  * @param x number of pixels
-    //  * @param y number of pixels
-    //  * @param w number of pixels
-    //  * @param h number of pixels
-    //  */
-    // //% blockId=oled_draw_rect
-    // //% block="draw outlined box with coordinates |x %x|y %y|w %w|h %h"
-    // //% async 
-    // //% shim=OLED::drawRect
-    // export function drawRectangle(x:number,y:number, w:number, h:number): void {
-    //     return;
-    // }
-    // /**
-    //  * draws a filled circle
-    //  * @param x number of pixels
-    //  * @param y number of pixels
-    //  * @param r number of pixels
-    //  */
-    // //% blockId=oled_fill_circle
-    // //% block="draw filled circle with coordinates |x %x|y %y|r %r"
-    // //% async 
-    // //% shim=OLED::fillCircle
-    // export function fillCircle(x:number,y:number, r:number): void {
-    //     return;
-    // }
-    // /**
-    //  * draws an outlined cirle
-    //  * @param x x-coordinate of centre
-    //  * @param y y-coordinate of centre
-    //  * @param r radius
-    //  */
-    // //% blockId=oled_draw_circle
-    // //% block="draw outlined circle with coordinates of centre |x %x|y %y| and radius r %r"
-    // //% async 
-    // //% shim=OLED::drawCircle
-    // export function drawCircle(x:number,y:number, r:number): void {
-    //     return;
-    // }
-    // /**
-    //  * draws a line
-    //  * @param x1 coordinate of x1
-    //  * @param y1 coordinate of y1
-    //  * @param x2 coordinate of x2
-    //  * @param y2 coordinate of y2
-    //  */
-    // //% blockId=oled_draw_line
-    // //% block="draw line OLED with coordinates |x1 %x1|y1 %y1|x2 %x2|y2 %y2"
-    // //% async 
-    // //% shim=OLED::drawLine
-    // export function drawLine(x1:number,y1:number, x2:number, y2:number): void {
-    //     return;
-    // }
-
-    // /**
-    //  * @param progress current progress
-    //  * Show a progress bar with specified percentage of progress
-    //  */
-    // //% blockId=oled_show_progress
-    // //% block="show progress of percentage progress %progress|"
-    // //% async 
-    // //% shim=OLED::showProgress
-    // export function showProgress(progress:number): void {
-    //     return;
-    // }
+ 
 
 }
