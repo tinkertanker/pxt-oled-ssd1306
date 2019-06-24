@@ -69,6 +69,8 @@ namespace OLED {
 		oled->display();
 	}
 
+#ifdef WANT_SHAPES
+
 	//%
 	void drawCircle(int x, int y, int r){
 		oled->drawCircle(x, y, r, 1);
@@ -142,6 +144,9 @@ namespace OLED {
 		drawRect(0,21,128,21);
 		fillRect(0,21,progress*128/100,21);
 	}
+
+#endif
+
     #define printf(...) uBit.serial.printf(__VA_ARGS__)
 
 }
