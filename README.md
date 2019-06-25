@@ -67,7 +67,7 @@ The ``init`` block must be placed before this.
 
 ## Temporarily Disabled
 
-These blocks have gone away for the time being, due to some meory issues in MakeCode. We'll bring them back as soon as we can.
+These blocks have gone away for the time being, due to some memory issues in MakeCode. We'll bring them back as soon as we can.
 
 ### Show Loading Screen
 Displays a pre-made loading screen.
