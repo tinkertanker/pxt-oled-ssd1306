@@ -1,21 +1,26 @@
 {
-    "name": "pxt-oled-temp",
-    "version": "0.0.4",
-    "description": "",
+    "name": "SSD1306_OLED",
+    "version": "1.2.10",
+    "description": "Tinkercademy package for SSD1306 OLED controller",
+    "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",
-        "main.ts",
-        "travis.ts",
-        "temp.ts"
+        "ssd1306.ts",
+        "SSD1306_OLED.cpp",
+        "Adafruit_SSD1306.h",
+        "Adafruit_SSD1306.cpp",
+        "Adafruit_GFX.h",
+        "Adafruit_GFX.cpp",
+        "Adafruit_GFX_Config.h",
+        "glcdfont.h",
+        "enums.d.ts"
     ],
     "testFiles": [
-        "test.ts"
+        "tests.ts"
     ],
-    "public": false,
-    "preferredEditor": "tsprj",
-    "installedVersion": "workspace:abe1895f-31ea-462d-3e07-8f9ffaa101f2"
+    "public": true,
+    "preferredEditor": "tsprj"
 }
