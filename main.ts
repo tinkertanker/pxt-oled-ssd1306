@@ -252,7 +252,7 @@ namespace OLED {
     //% weight=1
     export function drawLine(x0: number, y0: number, x1: number, y1: number) {
         let pixels: Array<Array<number>> = []
-        let kx, ky, c, i, xx, yy, dx, dy;
+        let kx: number, ky: number, c: number, i: number, xx: number, yy: number, dx: number, dy: number;
         let targetX = x1
         let targetY = y1
         x1 -= x0; kx = 0; if (x1 > 0) kx = +1; if (x1 < 0) { kx = -1; x1 = -x1; } x1++;
