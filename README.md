@@ -65,20 +65,6 @@ OLED.clear()
 
 The ``init`` block must be placed before this.
 
-## Temporarily Disabled
-
-These blocks have gone away for the time being, due to some memory issues in MakeCode. We'll bring them back as soon as we can.
-
-### Show Loading Screen
-Displays a pre-made loading screen.
-
-```sig
-OLED.Loading_Screen()
-```
-
-The ``init`` block must be placed before this.
-
-
 ### Draw Outlined Rectangle
 Displays an outline of a rectangle.
 
@@ -89,31 +75,11 @@ OLED.drawRectangle(x,y,w,h)
 The ``init`` block must be placed before this.
 
 
-### Draw Filled Rectangle
-Displays a filled rectangle.
-
-```sig
-OLED.fillRectangle(x,y,w,h)
-```
-
-The ``init`` block must be placed before this.
-
-
 ### Draw Outlined Circle
 Displays an outline of a circle.
 
 ```sig
 OLED.drawCircle(x,y,r)
-```
-
-The ``init`` block must be placed before this.
-
-
-### Draw Filled Circle
-Displays a filled circle.
-
-```sig
-OLED.fillCircle(x,y,r)
 ```
 
 The ``init`` block must be placed before this.
@@ -133,7 +99,7 @@ The ``init`` block must be placed before this.
 Displays a progress bar with a specified percentage of progress.
 
 ```sig
-OLED.showProgress()
+OLED.drawLoadingBar(percent)
 ```
 
 The ``init`` block must be placed before this.
