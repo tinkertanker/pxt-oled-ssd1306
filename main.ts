@@ -1,4 +1,4 @@
-//% color="#00CC99"
+//% color=#27b0ba weight=100 icon="\uf26c"
 namespace OLED {
     const SSD1306_SETCONTRAST = 0x81
     const SSD1306_SETCOLUMNADRESS = 0x21
