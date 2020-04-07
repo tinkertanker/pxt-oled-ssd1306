@@ -1,5 +1,5 @@
 {
-	"OLED.init|block": "OLED 初始化 宽 %width 高 %height",
+    "OLED.init|block": "OLED 初始化 宽 %width 高 %height",
     "OLED.drawRectangle|block": "绘制矩形 起点:|x: $x0 y: $y0 终点| x: $x1 y: $y1",
     "OLED.writeStringNewLine|block": "新行显示字符串 $str",
     "OLED.writeNumNewLine|block": "新行显示数字 $n",
