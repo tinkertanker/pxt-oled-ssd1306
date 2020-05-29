@@ -1,0 +1,14 @@
+{
+  "OLED.clear|block": "清除显示",
+  "OLED.drawLine|block": "画线条 起点:|x: $x0 y: $y0 终点| x: $x1 y: $y1",
+  "OLED.drawLoading|block": "显示进度条 $percent %",
+  "OLED.drawRectangle|block": "绘制矩形 起点:|x: $x0 y: $y0 终点| x: $x1 y: $y1",
+  "OLED.init|block": "OLED 初始化 宽 %width 高 %height",
+  "OLED.newLine|block": "新行",
+  "OLED.writeNumNewLine|block": "显示数字 $n",
+  "OLED.writeNum|block": "新行显示数字 $n",
+  "OLED.writeStringNewLine|block": "新行显示字符串 $str",
+  "OLED.writeString|block": "显示字符串 $str",
+  "{id:category}Math": "Math",
+  "{id:category}OLED": "OLED"
+}
