@@ -3,12 +3,12 @@
   "OLED.drawLine|block": "繪製直線 起點:|x: $x0 y: $y0 終點| x: $x1 y: $y1",
   "OLED.drawLoading|block": "顯示進度條 $percent %",
   "OLED.drawRectangle|block": "繪製矩形 起點:|x: $x0 y: $y0 終點| x: $x1 y: $y1",
-  "OLED.init|block": "OLED 初始化 寬 %width 高 %height",
+  "OLED.init|block": "OLED初始化 寬 %width 高 %height",
   "OLED.newLine|block": "換行",
-  "OLED.writeNumNewLine|block": "換行顯示 數字 $n",
-  "OLED.writeNum|block": "顯示 數字 $n",
-  "OLED.writeStringNewLine|block": "換行顯示 字串 $str",
-  "OLED.writeString|block": "顯示 字串 $str",
+  "OLED.writeNumNewLine|block": "顯示數字 $n 後換行",
+  "OLED.writeNum|block": "顯示數字 $n",
+  "OLED.writeStringNewLine|block": "顯示字串 $str 後換行",
+  "OLED.writeString|block": "顯示字串 $str",
   "{id:category}Math": "Math",
   "{id:category}OLED": "OLED"
 }
