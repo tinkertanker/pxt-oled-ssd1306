@@ -9,7 +9,10 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/SSD1306_OLED-strings.json"
+        "_locales/zh-cn/SSD1306_OLED-strings.json",
+        "_locales/zh-cn/SSD1306_OLED-jsdocs-strings.json",
+        "_locales/zh-tw/SSD1306_OLED-strings.json",
+        "_locales/zh-tw/SSD1306_OLED-jsdocs-strings.json"
     ],
     "testFiles": [
         "test.ts"
