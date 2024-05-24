@@ -1,6 +1,6 @@
 {
     "name": "SSD1306_OLED",
-    "version": "2.0.9",
+    "version": "2.0.10",
     "description": "Tinkercademy package for SSD1306 OLED controller",
     "license": "MIT",
     "dependencies": {
@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/SSD1306_OLED-strings.json"
+        "_locales/zh/SSD1306_OLED-strings.json",
+        "_locales/zh-TW/SSD1306_OLED-strings.json"
     ],
     "testFiles": [
         "test.ts"
