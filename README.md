@@ -21,7 +21,7 @@ This block must be placed before any of the ``show`` blocks.
 Displays a string on the OLED module without a newline.
 
 ```sig
-OLED.showString1("hello, micro:bit!")
+OLED.writeString("hello, micro:bit!")
 ```
 
 The ``init`` block must be placed before this.
@@ -30,7 +30,7 @@ The ``init`` block must be placed before this.
 Displays a string on the OLED module with a newline.
 
 ```sig
-OLED.showString2("hello, micro:bit!")
+OLED.writeStringNewLine("hello, micro:bit!")
 ```
 
 The ``init`` block must be placed before this.
@@ -40,7 +40,7 @@ The ``init`` block must be placed before this.
 Displays a number on the OLED module without a newline.
 
 ```sig
-OLED.showNumber1(123)
+OLED.writeNum(123)
 ```
 
 The ``init`` block must be placed before this.
@@ -50,7 +50,7 @@ The ``init`` block must be placed before this.
 Displays a number on the OLED module with a newline.
 
 ```sig
-OLED.showNumber2(123)
+OLED.writeNumNewLine(123)
 ```
 
 The ``init`` block must be placed before this.
@@ -75,16 +75,6 @@ OLED.drawRectangle(x,y,w,h)
 The ``init`` block must be placed before this.
 
 
-### Draw Outlined Circle
-Displays an outline of a circle.
-
-```sig
-OLED.drawCircle(x,y,r)
-```
-
-The ``init`` block must be placed before this.
-
-
 ### Draw Line
 Displays a line.
 
@@ -99,7 +89,7 @@ The ``init`` block must be placed before this.
 Displays a progress bar with a specified percentage of progress.
 
 ```sig
-OLED.drawLoadingBar(percent)
+OLED.drawLoading(percent)
 ```
 
 The ``init`` block must be placed before this.
