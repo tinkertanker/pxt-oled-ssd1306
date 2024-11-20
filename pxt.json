@@ -4,7 +4,8 @@
     "description": "Tinkercademy package for SSD1306 OLED controller",
     "license": "MIT",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -16,5 +17,12 @@
         "test.ts"
     ],
     "public": true,
+    "targetVersions": {
+        "target": "7.0.51",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
     "preferredEditor": "tsprj"
 }
