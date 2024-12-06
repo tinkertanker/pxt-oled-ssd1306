@@ -148,7 +148,7 @@ namespace OLED {
     //% block="show (without newline) string $str"
     //% weight=6
     export function writeString(str: string) {
-        for (let i = 0; i < str.length(); i++) {
+        for (let i = 0; i < str.length; i++) {
             if (charX > displayWidth - 6) {
                 newLine()
             }
@@ -301,6 +301,37 @@ namespace OLED {
         drawLine(x0, y1, x1, y1)
         drawLine(x0, y0, x0, y1)
         drawLine(x1, y0, x1, y1)
+    }
+    //% block="draw circle at x: $x y: $y radius: $r"
+    //% x.defl=64
+    //% y.defl=32
+    //% r.defl=10
+    //% weight=0
+    export function drawCircle(x: number, y: number, r: number) {
+        let theta = 0;
+        let step = Math.PI / 90;  // Adjust step for smoothness
+        let pixels: Array<Array<number>> = [];
+    
+        while (theta < 2 * Math.PI) {
+            let xPos = Math.floor(x + r * Math.cos(theta));
+            let yPos = Math.floor(y + r * Math.sin(theta));
+            pixels.push([xPos, yPos]);
+            theta += step;
+        }
+    
+        drawShape(pixels);
+    }
+    
+    //% block="draw filled circle at x: $x y: $y radius: $r"
+    //% x.defl=64
+    //% y.defl=32
+    //% r.defl=10
+    //% weight=0
+    export function drawFilledCircle(x: number, y: number, r: number) {
+        for (let dx = -r; dx <= r; dx++) {
+            let height = Math.floor(Math.sqrt(r * r - dx * dx));
+            drawLine(x + dx, y - height, x + dx, y + height);
+        }
     }
     //% block="initialize OLED with width $width height $height"
     //% width.defl=128
