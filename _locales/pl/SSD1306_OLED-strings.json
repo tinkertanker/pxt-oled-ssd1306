@@ -1,0 +1,16 @@
+{
+  "OLED.clear|block": "wyczyść wyświetlacz OLED",
+  "OLED.drawLoading|block": "zamaluj pasek ładowania do $percent procent",
+  "OLED.writeString|block": "pokaż (bez przejścia do nowej linii) ciąg znaków $str",
+  "OLED.writeNum|block": "pokaż (bez przejścia do nowej linii) liczbę $n",
+  "OLED.writeStringNewLine|block": "pokaż ciąg znaków $str",
+  "OLED.writeNumNewLine|block": "pokaż liczbę $n",
+  "OLED.newLine|block": "wstaw nową linię",
+  "OLED.drawLine|block": "narysuj linię od:|x: $x0 y: $y0 do| x: $x1 y: $y1",
+  "OLED.drawRectangle|block": "narysuj prostokąt od:|x: $x0 y: $y0 do| x: $x1 y: $y1",
+  "OLED.drawCircle|block": "narysuj okrąg w x: $x y: $y promień: $r",
+  "OLED.drawFilledCircle|block": "narysuj wypełniony okrąg w x: $x y: $y promień: $r",
+  "OLED.init|block": "zainicjuj OLED o szerokości $width i wysokości $height",
+  "{id:category}Math": "Matematyka",
+  "{id:category}OLED": "OLED"
+}
