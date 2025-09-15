@@ -11,6 +11,7 @@
         "main.ts",
         "_locales/zh/SSD1306_OLED-strings.json",
         "_locales/pl/SSD1306_OLED-strings.json",
+        "_locales/ja/SSD1306_OLED-strings.json",
         "_locales/zh-TW/SSD1306_OLED-strings.json"
     ],
     "testFiles": [
